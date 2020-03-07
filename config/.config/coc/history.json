@@ -1,0 +1,29 @@
+{
+  "diagnostics": {
+    "%2FUsers%2Fujinyoung": [
+      ":`"
+    ]
+  },
+  "extensions": {
+    "%2FUsers%2Fujinyoung": [
+      " p"
+    ]
+  },
+  "commands": {
+    "%2FUsers%2Fujinyoung": [
+      "ex"
+    ]
+  },
+  "symbols": {
+    "%2FUsers%2Fujinyoung": [
+      "memcpy",
+      "sele",
+      "  1"
+    ]
+  },
+  "outline": {
+    "%2FUsers%2Fujinyoung": [
+      "exit"
+    ]
+  }
+}
