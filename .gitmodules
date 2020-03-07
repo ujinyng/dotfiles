@@ -1,0 +1,6 @@
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = ./zsh/.oh-my-zsh
+[submodule "dracula-iterm"]
+	path = dracula-iterm
+	url = ./term/dracula-iterm

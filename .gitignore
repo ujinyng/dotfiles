@@ -1,0 +1,12 @@
+
+*.swl
+*.swm
+*.swn
+*.swo
+*.swp
+local/.local/nvim/share/swap/
+.DS_Store
+Desktop.ini
+Thumbs.db
+.Trashes
+
