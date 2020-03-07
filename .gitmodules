@@ -1,6 +1,6 @@
 [submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = ./zsh/.oh-my-zsh
-[submodule "dracula-iterm"]
-	path = dracula-iterm
-	url = ./term/dracula-iterm
+	path = zsh/.oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "term/iterm"]
+	path = term/iterm
+	url = https://github.com/dracula/iterm.git
