@@ -65,39 +65,82 @@ let g:airline#extensions#tabline#buffer_nr_format = '%s:' " buffer number format
 "----------------------------fzf----------------------------------"
 "let g:fzf_command_prefix = 'fzf'
 
+noremap <silent> <leader>c :Commands<CR>
 
-":Lines,:BLines 와 유사해 나중에 지울수도
-":Fzflines - search lines in all open vim buffers
-nnoremap <leader>l :FZFLines<cr>
-command! FZFLines call fzf#run({
-\   'source':  <sid>buffer_lines(),
-\   'sink':    function('<sid>line_handler'),
-\   'options': '--extended --nth=3..',
-\   'down':    '60%'
-\})
+command! -nargs=1 -bang Locate call fzf#run(fzf#wrap(
+      \ {'source': 'locate <q-args>', 'options': '-m'}, <bang>0))
 
-function! s:line_handler(l)
-  let keys = split(a:l, ':\t')
-  exec 'buf' keys[0]
-  exec keys[1]
-  normal! ^zz
+" Open files in horizontal split
+nnoremap <silent> <Leader>s :call fzf#run(fzf#vim#with_preview({
+\   'option': $FZF_HIGHLIGHT_PREVIEW_OPTS,
+\   'down': '40%',
+\   'sink': 'botright split' }))<CR>
+
+" \   'option': FZF_PREIVEW_COMMAND, 
+" Open files in vertical horizontal split
+nnoremap <silent> <Leader>v :call fzf#run(fzf#vim#with_preview({
+\   'right': winwidth('.') / 2,
+\   'sink':  'vertical botright split' }))<CR>
+
+" \   'option': $FZF_DEFAULT_OPTS,
+function! s:buflist()
+  redir => ls
+  silent ls
+  redir END
+  return split(ls, '\n')
 endfunction
-function! s:buffer_lines()
-  let res = []
-  for b in filter(range(1, bufnr('$')), 'buflisted(v:val)')
-    call extend(res, map(getbufline(b,0,"$"), 'b . ":\t" . (v:key + 1) . ":\t" . v:val '))
-  endfor
-  return res
+
+function! s:bufopen(e)
+  execute 'buffer' matchstr(a:e, '^[ 0-9]*')
 endfunction
 
-" command! -bar Tags if !empty(tagfiles()) | call fzf#run({
-" \   'source': "sed '/^\\!/d;s/\t.*//' " . join(tagfiles()) . ' | uniq',
-" \   'sink':   'tag',
-" \ }) | else | echo 'Preparing tags' | call system('ctags -R') | FZFTag | endif
+nnoremap <silent> <Leader>b :call fzf#run({
+\   'source':  reverse(<sid>buflist()),
+\   'sink':    function('<sid>bufopen'),
+\   'options': '+m',
+\   'down':    len(<sid>buflist()) + 2
+\ })<CR>
 
-":BTags와 유사해서 나중에 지울수도
+nnoremap <silent> <leader>h :FZFMru<CR>
+command! FZFMru call fzf#run(fzf#vim#with_preview({
+\  'source':  v:oldfiles,
+\  'sink':    'e',
+\  'options': '-m -x +s',
+\  'down':    '40%'})
+\ )
+
+
+":BLines - lines in the current buffer
+nnoremap <leader>bl :BLines<CR> 
+"Alternatives to FZFLines
+nnoremap <leader>l :Lines<CR>
+":FZFLines - search lines in all open vim buffers
+" nnoremap <leader>l :FZFLines<cr>
+" command! FZFLines call fzf#run({
+" \   'source':  <sid>buffer_lines(),
+" \   'sink':    function('<sid>line_handler'),
+" \   'options': '--extended --nth=3..',
+" \   'down':    '60%'
+" \})
+" function! s:line_handler(l)
+"   let keys = split(a:l, ':\t')
+"   exec 'buf' keys[0]
+"   exec keys[1]
+"   normal! ^zz
+" endfunction
+" function! s:buffer_lines()
+"   let res = []
+"   for b in filter(range(1, bufnr('$')), 'buflisted(v:val)')
+"     call extend(res, map(getbufline(b,0,"$"), 'b . ":\t" . (v:key + 1) . ":\t" . v:val '))
+"   endfor
+"   return res
+" endfunction
+
+"sorted tags in the current buffer
+nnoremap <leader>ts :BTags<CR>
 ":Btags - jump to tags in the current buffer
-nnoremap <leader>t :Btags<cr>
+":BTags와 유사
+nnoremap <leader>t :Btags<CR>
 command! Btags call s:btags()
 function! s:align_lists(lists)
   let maxes = {}
@@ -143,9 +186,8 @@ function! s:btags()
 endfunction
 
 ":Ag
-
 command! -nargs=* Ag call fzf#run({
-\ 'source':  printf('ag --nogroup --column --color "%s"',
+\ 'source':  printf('ag -p ~/.ignore --nogroup --column --nocolor "%s"',
 \                   escape(empty(<q-args>) ? '^(?=.)' : <q-args>, '"\')),
 \ 'sink*':    function('<sid>ag_handler'),
 \ 'options': '--ansi --expect=ctrl-t,ctrl-v,ctrl-x --delimiter : --nth 4.. '.
@@ -203,15 +245,26 @@ function! s:fzf_neighbouring_files()
   let cwd = fnamemodify(current_file, ':p:h')
   let command = 'Ag -g "" -f ' . cwd . ' --depth 0'
 
-  call fzf#run({
+  call fzf#run(fzf#vim#with_preview({
         \ 'source': command,
         \ 'sink':   'e',
         \ 'options': '-m -x +s',
-        \ 'window':  'enew' })
+        \ 'window':  'enew' }))
 endfunction
 
-command! -nargs=1 -bang Locate call fzf#run(fzf#wrap(
-      \ {'source': 'locate <q-args>', 'options': '-m'}, <bang>0))
+"
+" choose from templates and apply to file
+"
+" function! s:read_template_into_buffer(template)
+" 	" has to be a function to avoid the extra space fzf#run insers otherwise
+" 	execute '0r ~/.vim/templates/'.a:template
+" endfunction
+
+" command! -bang -nargs=* LoadTemplate call fzf#run({
+" 			\   'source': 'ls -1 ~/.config/nvim/templates',
+" 			\   'down': 20,
+" 			\   'sink': function('<sid>read_template_into_buffer')
+" 			\ })
 
 "---------buffer setting---------
 set hidden "탭없이버퍼사용할때 필수, 버퍼 수정 직후 버퍼를 감춰지도록 함"
