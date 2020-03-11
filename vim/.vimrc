@@ -425,6 +425,16 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
 "------------------vimwiki----------------------------------
+let g:vimwiki_list = [
+	\{
+	\		'path': '~/Dropbox/vimwiki',
+	\		'ext': '.md',
+	\		'diary_rel_path': '.'
+	\}]
+
+let g:vimwiki_conceallevel = 0
+let g:vimwiki_folding='list'
+
 function! LastModified()
     if g:md_modify_disabled
         return
@@ -538,6 +548,7 @@ set autoindent
 set smarttab "using auto space or tab for indent and alignment
 set cindent "c용 들여쓰기
 "set paste
+set expandtab
 
 set bs=indent,eol,start
 
