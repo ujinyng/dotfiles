@@ -1,3 +1,5 @@
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -39,7 +41,7 @@ ZSH_THEME="agnoster"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -108,13 +110,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#터미널 이름만나오게하기
+# prompt show just name
+# prompt_context() {
+#   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+#     prompt_segment #061326 default "%(!.%{%F{yellow}%}.)" 
+#   fi
+# } 
+# prompt don't show name
+#
+
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+    emojis=("😎" "😃" "😆" "😙" "😋" "🤪" "👻" "👀" "✌️ " "🧠" "🦄" "🐶" "🐱" "🌼" "🌈" "🔥" "⚡️" "⭐️" "💎" "🔮" "🖤" "❄️ " "☀️ " "💡" "🎸" "🧶" "👑" "🧚" "🐾" "🍭" "🚀" "💜")
+    RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
+    prompt_segment 235 default "%(!.%{%F{yellow}%}.) ${emojis[$RAND_EMOJI_N]}"
   fi
-}
-#export FZF_DEFAULT_COMMAND=’fd — type f’
+ }
+
 alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
@@ -128,8 +140,7 @@ alias vimdiff="nvim -d"
 #alias z='fasd_cd -d'     # 디렉터리 이동
 #alias zz='fasd_cd -d -i' # 디렉터리 선택 후 이동
 
-function zle-keymap-select zle-line-init
-{
+zle-keymap-select zle-line-init() {
     # change cursor shape in iTerm2
     case $KEYMAP in
         vicmd)      print -n -- "\E]50;CursorShape=0\C-G";;  # block cursor
@@ -140,32 +151,30 @@ function zle-keymap-select zle-line-init
     zle -R
 }
 
-function zle-line-finish
-{
+zle-line-finish() {
     print -n -- "\E]50;CursorShape=0\C-G"  # block cursor
 }
 
+zle -N zle-keymap-select
 zle -N zle-line-init
 zle -N zle-line-finish
-zle -N zle-keymap-select
-
-# function zle-line-init zle-keymap-select {
-#     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-#     RPS2=$RPS1
-#     zle reset-prompt
-# }
-
-# zle -N zle-line-init
-# zle -N zle-keymap-select
-#alias -s typora
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-
+fpath=(
+  /usr/local/share/zsh-completions 
+  ~/dotfiles/test
+  ~/dotfiles/yabai
+  # ~/dotfiles/test2
+  $fpath
+)
+autoload -Uz ~/dotfiles/yabai/**/*
+autoload -Uz ~/dotfiles/gdb/**/*
+autoload -Uz ~/dotfiles/test/**/*
 # set -o vi
-set -o emacs
+#set -o emacs
+bindkey -e
+# bindkey -v
 
 # fkill - kill processes - list only the ones you can kill. Modified the earlier script.
 fk() {
@@ -205,21 +214,21 @@ ch() {
 
 ## FZF & Docker
 # Select a docker container to start and attach to
-function da() {
+dka() {
   local cid
   cid=$(docker ps -a | sed 1d | fzf -1 -q "$1" | awk '{print $1}')
 
   [ -n "$cid" ] && docker start "$cid" && docker attach "$cid"
 }
 # Select a running docker container to stop
-function ds() {
+dks() {
   local cid
   cid=$(docker ps | sed 1d | fzf -q "$1" | awk '{print $1}')
 
   [ -n "$cid" ] && docker stop "$cid"
 }
 # Select a docker container to remove
-function drm() {
+dkrm() {
   local cid
   cid=$(docker ps -a | sed 1d | fzf -q "$1" | awk '{print $1}')
 
@@ -235,4 +244,34 @@ function drm() {
 # }
 
 
+tm() {
+  [[ -n "$TMUX" ]] && change="switch-client" || change="attach-session"
+  if [ $1 ]; then
+    tmux $change -t "$1" 2>/dev/null || (tmux new-session -d -s $1 && tmux $change -t "$1"); return
+  fi
+  session=$(tmux list-sessions -F "#{session_name}" 2>/dev/null | fzf --exit-0) &&  tmux $change -t "$session" || echo "No sessions found."
+}
 
+tmk(){
+  tmux ls | grep : | cut -d. -f1 | awk '{print substr($1, 0, length($1)-1)}' | xargs kill
+}
+
+export FZF_BASE="/Users/ujinyoung/.fzf.zsh:/usr/local/bin/fzf"
+
+alias tmux='TERM=xterm-256color tmux -2'
+alias tsource='tmux source-fil'
+alias so='source'
+alias tso='tsource'
+
+gpp(){
+  g++ ${1%.*}.cc --std=c++14 -pthread -O3 -o $1
+}
+c(){
+  gcc ${1%.*}.c -pthread -lm -O3 -o $1
+}
+alias cpp=gpp
+gpg(){
+  g++ -g ${1%.*}.cc -std=c++14 -pthread -O3 -o $1
+}
+
+export PATH="/usr/local/opt/qt/bin:$PATH"

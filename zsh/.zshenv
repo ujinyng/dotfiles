@@ -9,7 +9,7 @@ export VIM="/usr/local/Cellar/neovim/0.4.3/share/nvim"
 
 export PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 
-export FZF_BASE="/Users/ujinyoung/.fzf.zsh"
+export FZF_BASE="/Users/ujinyoung/.fzf.zsh:/usr/local/bin/fzf:/usr/local/opt/fzf/install:/usr/local/opt/fzf/bin"
 
 # export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_DEFAULT_COMMAND='ag -f --hidden -p ~/.ignore -g "" 2> /dev/null'
@@ -51,3 +51,8 @@ export PYENV_VERSION='system'
 
 export HL_CONFIG_DIR='/usr/local/etc/highlight'
 export HL_DATA_DIR='/usr/local/Cellar/highlight/3.55/share/highlight'
+PATH=${PATH}:~/Downloads
+
+export VIMWIKI='~/Dropbox/vimwiki'
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+

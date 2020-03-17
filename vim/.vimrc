@@ -1,5 +1,6 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
-	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+" if !filereadable('~/.vim/autoload/plug.vim')	
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
   	  \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	autocmd VimEnter * PlugInstall --sync | source ~/.vimrc
 endif
@@ -28,10 +29,34 @@ Plug 'tpope/vim-fugitive'
 Plug 'vimwiki/vimwiki'
 Plug 'mhinz/vim-startify'
 
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
 let mapleader=','
+
+"use OS clipboard
+set clipboard=unnamed
+
+
+"-----------vim-tmux-navigator----------
+let g:tmux_navigator_no_mappings = 1
+"ctrl-h,j,k,l
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
+
+" 1- Write the current buffer, but only if chnaged 
+":update
+" 2- Write all buffers before navigating from Vim to tmux pane
+":wall
+" let g:tmux_navigator_save_on_switch = 2
+
+" Disable tmux navigator when zooming the Vim pane
+" let g:tmux_navigator_disable_when_zoomed = 1
+
 
 "---------------autopairs---------------
 let g:Autopairsflymode =1
@@ -62,6 +87,25 @@ let g:airline_theme='base16'
 let g:airline#extensions#tabline#buffer_nr_show = 1 " buffer number를 보여준다
 let g:airline#extensions#tabline#buffer_nr_format = '%s:' " buffer number format
 
+"---------tmuxline.vim-------------
+" let g:tmuxline_preset = {
+"       \'a'    : ['#S'],
+"       \'b'    : ['#I', '#F'],
+"       \'c'    : '#W',
+"       \'win'  : '',
+"       \'cwin' : '',
+"       \'x'    : '',
+"       \'y'    : '',
+"       \'z'    : ''}
+" let g:airline#extensions#tmuxline#enabled = 0
+" let g:tmuxline_theme = 'jellybeans'
+"%R: time, %l:%M%p: time, %a: day, %Y-%m-%d: date, 
+"#W: nvim?, #T: ?
+"#H: Hostname of local host
+"#h: Hostname of local host without the domain name
+"#S: Session name
+"#F: Current Window Flag
+"#I: Current Window index
 "----------------------------fzf----------------------------------"
 "let g:fzf_command_prefix = 'fzf'
 
@@ -297,13 +341,18 @@ vnoremap ;; <ESC>:
 
 "visual/select to insert 
 vnoremap a <ESC>a 
-"입력모드에서 커서이동
-imap <C-h> <C-o>h
-imap <C-j> <C-o>j
-imap <C-k> <C-o>k
-imap <C-l> <C-o>l
-imap <C-^> <C-o>^
-imap <C-\> <C-o>$
+
+""입력모드에서 커서이동
+"imap <C-h> <C-o>h
+"imap <C-j> <C-o>j
+"imap <C-k> <C-o>k
+"imap <C-l> <C-o>l
+" imap <C-^> <C-o>^
+" imap <C-\> <C-o>$
+
+"커서 맨 앞으로, 맨 뒤로(nomal mode)
+nnoremap ;b ^
+nnoremap ;w $
 
 "noremap H ^
 ""noremap L $
@@ -345,7 +394,7 @@ set signcolumn=yes
 
 nnoremap gadd :Gwrite
 
-"----------- option-],[로 이동, <CR>로 선택, <Tab> 으로 첫번째 선택 
+"----------- option ],[로 이동, <CR>로 선택, <Tab> 으로 첫번째 선택 
 inoremap <expr> <M-]> pumvisible()? ("\<C-n>"):""
 inoremap <expr> <M-[> pumvisible()? ("\<C-p>"):""
 
@@ -487,7 +536,7 @@ let g:vimwiki_list = [
 
 let g:vimwiki_conceallevel = 0
 let g:vimwiki_folding='list'
-
+let g:md_modify_disabled = 0
 function! LastModified()
     if g:md_modify_disabled
         return
@@ -560,9 +609,10 @@ let g:startify_session_persistence    = 1
 let g:startify_bookmarks = [
  \ {'vi':'~/.vimrc'},
  \ {'zs':'~/.zshrc'},
- \ {'en':'~/.zshenv'},
+ \ {'ze':'~/.zshenv'},
  \ {'zp':'~/.zprofile'},
- \ {'wi':'~/vimwiki'},
+ \ {'wi':'~/Dropbox/vimwiki'},
+ \ {'tm':'~/.tmux.conf'}
  \ ]
 let g:startify_session_autoload = 1
 let g:startify_session_before_save =[]
@@ -579,11 +629,11 @@ let g:startify_session_savecmds=[]
   endfunction
 
 let g:startify_lists = [
-  \ { 'type': 'dir',       'header': ['   🕰  Recent files'] },
-  \ { 'type': 'sessions',  'header': ['   🚀 Sessions'] },
-  \ { 'type': 'commands',  'header': ['   📀 Commands'] },
-  \ { 'type': 'bookmarks', 'header': ['   💎 Boookmarks'] },
-  \ { 'type': function('s:list_commits'),  'header': ['   📥 Commits'] },
+  \ { 'type': 'dir',       'header': ['   🕰 Recent files'] },
+  \ { 'type': 'sessions',  'header': ['   🚀  Sessions'] },
+  \ { 'type': 'commands',  'header': ['   📀  Commands'] },
+  \ { 'type': 'bookmarks', 'header': ['   💎  Boookmarks'] },
+  \ { 'type': function('s:list_commits'),  'header': ['   📥  Commits'] },
  \ ]
 
 "----commentary.vim------
