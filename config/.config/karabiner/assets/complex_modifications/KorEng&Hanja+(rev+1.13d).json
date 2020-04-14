@@ -1,0 +1,175 @@
+{
+	"title": "애플키보드 한영전환/한자키 지정 (rev.1.13d)",
+	"rules": [
+		{
+			"description": "R_Command를 한영키로 사용",
+			"manipulators": [
+				{
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.microsoft.rdc.macos"
+							]
+						}
+					],
+					"from": { 
+						"key_code": "right_command",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [ { "key_code": "right_option" } ]
+				},
+				{ 
+      		"type": "basic",
+      		"conditions": [
+      			{
+      				"type": "frontmost_application_unless",
+      				"bundle_identifiers": [
+      					"com.parallels.desktop",
+      					"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.microsoft.rdc.macos"
+							]
+						}
+					],
+        	"from": { 
+        		"key_code": "right_command",
+        		"modifiers": { "optional": [ "caps_lock" ] }
+        	},
+          "to": [
+          	{
+          		"key_code": "spacebar",
+          		"modifiers": [
+          			"left_control",
+          			"left_option"
+          		]
+          	}
+          ]
+        }
+			]
+		},
+		
+		{
+    	"description": "R_Option을 한자/특수문자 키로 사용",
+      "manipulators": [
+      	{
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.microsoft.rdc.macos"
+							]
+						}
+					],
+					"from": { "key_code": "right_option",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [ { "key_code": "right_control" } ]
+				},
+				{
+					"type": "basic",
+					"conditions": [
+      			{
+      				"type": "frontmost_application_unless",
+      				"bundle_identifiers": [
+      					"com.parallels.desktop",
+      					"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.microsoft.rdc.macos",
+								"com.google.Chrome"
+							]
+						},
+						{
+							"type": "input_source_if",
+							"input_sources": [ { "language": "en" } ]
+						}
+					],
+					"parameters": {
+						"basic.to_if_held_down_threshold_milliseconds": 300
+					},
+					"from": { 
+						"key_code": "right_option",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [
+						{
+							"key_code": "right_option",
+							"lazy": true
+						}
+					],
+					"to_if_held_down": [
+						{
+							"key_code": "spacebar",
+							"modifiers": [
+								"left_control",
+								"left_command"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"conditions": [
+      			{
+      				"type": "frontmost_application_unless",
+      				"bundle_identifiers": [
+      					"com.parallels.desktop",
+      					"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.microsoft.rdc.macos",
+								"com.google.Chrome"
+							]
+						},
+						{
+							"type": "input_source_if",
+							"input_sources": [ { "language": "ko" } ]
+						}
+					],
+					"parameters": {
+						"basic.to_if_alone_timeout_milliseconds": 300,
+						"basic.to_if_held_down_threshold_milliseconds": 300
+					},
+					"from": { 
+						"key_code": "right_option",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [
+						{
+							"key_code": "right_option",
+							"lazy": true
+						}
+					],
+					"to_if_alone": [
+						{
+							"key_code": "return_or_enter",
+							"modifiers": [ "right_option" ]
+						}
+					],
+					"to_if_held_down": [
+						{
+							"key_code": "spacebar",
+							"modifiers": [
+								"left_control",
+								"left_command"
+							]
+						}
+					]
+				}
+			]
+		}
+		
+	]
+}

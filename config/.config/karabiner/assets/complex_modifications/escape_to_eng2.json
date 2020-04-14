@@ -1,0 +1,63 @@
+{
+  "title": "Convert to en when ii or ;;",
+  "rules": [
+    {
+      "description":"Convert to en when ii or ;;",
+      "manipulators":[
+        {
+         "from":{
+          "key_code":"i"
+         },
+          "type":"basic",
+          "to": [
+             {
+               "set_variable": {
+               "name": "i_modifier",
+               "value": 1
+             }
+           }
+          ],
+          "to_after_key_up":[
+           {
+            "set_variable":{
+             "name": "i_modifier",
+             "value": 0
+            }
+           }
+          ],
+          "to_if_alone":[
+           {
+            "key_code": "i"
+           }
+         ]
+        },
+         {
+           "conditions":[
+           {
+           "type":"variable_if",
+           "name":"i_modifier",
+           "value":1
+             }
+           ],
+           "from":{
+            "key_code": "i"
+          },
+          "to":[
+           {"key_code":"q"}, 
+           {
+            
+             "select_input_source":{ 
+               "language":"en"
+             }
+            }
+          ],
+          "type": "basic"
+                       
+            }
+          ]
+        }
+      ]
+    }
+
+
+  
