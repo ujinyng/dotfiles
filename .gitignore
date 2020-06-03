@@ -1,10 +1,11 @@
 
+_vim/.config/coc/mru*
 *.swl
 *.swm
 *.swn
 *.swo
-*.swp
-local/.local/nvim/share/swap/
+*.swpq
+.local/nvim/share/swap/
 .DS_Store
 Desktop.ini
 Thumbs.db
