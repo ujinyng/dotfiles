@@ -1,0 +1,161 @@
+[user]
+  name = Jinyoung Yoo
+  email = ujinyng@gmail.com
+  username = ujinyng
+[core]
+  excludesfile = /Users/ujinyoung/.gitignore_global
+  editor=/usr/local/bin/nvim
+  autocrlf = input
+  precomposeunicode = true
+  quotepath = false
+[alias]
+  cm = commit
+  ad = "!# Select files and Add them.\n\
+        git diff-select | xargs git add"
+  s = status -s
+  st = status
+  br = branch
+  ck = checkout
+  pl = pull
+  ps = push
+  df = diff
+  sh = stash
+  acm = "!git add . && git commit"
+  unal = "!# Unstage all \n\
+          git reset HEAD"
+  unstage = "!# Select staged files and Unstage them.\n\
+             git diff-unselect | xargs git reset HEAD" 
+  un = unstage
+  sync = "!Sync with a [branch] in the remote repo \n\
+          f() { git fetch $1 && git reset --hard $1/$(git b0); }; f"
+  sync2 = "!# Sync with a branch with the same name in the remote repo.\n\
+           remote=$( \
+           { \
+             git remote -v | egrep '^(origin|upstream)\\s'; \
+             git remote -v | egrep -v '^(origin|upstream)\\s' | sort; \
+           } \
+           | awk '{print $1, $2}' | uniq \
+           | column -t \
+           | fzf | awk '{print $1}' \
+           ); \
+           if ! [ -z $remote ]; then \
+           git fetch $remote && git reset --hard $remote/`git b0`; \
+           fi"
+  update = "!# Update the remote repository with local\n\
+            remote=$( \
+            { \
+              git remote -v | egrep '^(origin|upstream)\\s'; \
+              git remote -v | egrep -v '^(origin|upstream)\\s' | sort; \
+            } \
+            | awk '{print $1, $2}' | uniq \
+            | column -t \
+            | fzf | awk '{print $1}' \
+            ); \
+            git stash; git pull --rebase $remote `git b0`; git stash pop;"
+  unsoft = "!git reset --soft HEAD^"
+  rb = rebase
+  rq = "!# Quit rebase when cannot going on.\n\
+        git rebase --quit"
+  cmempty = "!git commit --allow-empty"
+  b0 = "!# Show current branch \n\
+        git branch | awk '/^\\*/{print $2}'"
+  back = "! # Back up current branch \n\
+          git branch backup-`git b0`"
+  ckb = "!# Select to Change branch \n\
+         git checkout $(git bselect)"
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat 
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  l=lg 
+  branch-list = "!# List the branches.;\n\
+                 git for-each-ref --sort=-committerdate refs/heads --format='%(HEAD) %(refname:short)|%(committerdate:relative)|%(authorname)' \
+                 | column -ts'|' \
+                 | sed 's/^ /./'"
+  branch-list-all = "!# List all branches.;\n\
+                     for branch in `git branch -r --merged | grep -v HEAD`; do echo `git show --format=\"%ci ; %cr ; %an ;\" $branch | head -n 1` $branch; done | sort -r | column -ts';'"
+
+  stash-apply = "!# Select a stash item and Apply it.\n\
+                git stash-op apply"
+  shap = stash-apply
+  stash-unapply = "!# Unapply stash using recent stash \n\
+                  git stash show -p | git apply -R"
+  stash-un-select = "!# Select the stash and Recursively apply \n\
+                      git stash-op apply -R"
+  shun = stash-unapply
+  shuns = stash-un-select
+  stash-drop = "!# Select the stash items and Drop them.\n\
+                for sid in $(git stash-select -m) ; do \
+                git stash drop $sid; \
+                done;"
+  shdrop = stash-drop
+  shdr = stash-drop
+  stash-list = "!# List stash items.\n\
+                git stash list --pretty=format:\"%C(red)%gd%C(reset) %C(green)(%cr) %C(reset)%s\""
+  shli = stash-list
+  stash-pop = "!# Select a stash item and Pop it.\n\
+                git stash-op pop"
+  shpop = stash-pop
+  stash-save = "!# Save changes into the stash stack.\n\
+                git diff-info; \
+                read -p \"save message: \" msg; \
+                git stash save \"$msg\""
+  shsave = stash-save
+  shsav = stash-save
+  shsv = stash-save
+  diff-select = "!# Select changed files to add them. \n\
+    f() { \
+          _height=$(stty size | awk '{print $1}');\
+          git diff-info \
+          | fzf -m --header \"$(git diff --shortstat)\" --preview \
+          \"if [[ {1} == '??' ]]; then cat {3}; else git diff {3}; fi \
+          | head -n $_height \
+          | pygmentize\" \
+          | awk '{print $3}'; \
+    }; f"
+  diff-info = "!# Get diff info.\n\
+               fileA=/tmp/git-s-$(uuidgen); \
+               fileB=/tmp/git-diff-$(uuidgen); \
+               git status -s | awk '{print $2,$1}' > $fileA; \
+               git diff --numstat | awk '{print $3,$1,$2}' > $fileB; \
+               join -t' ' -a 1 $fileA $fileB | awk '{print $2, \"(+\"$3 \",-\"$4\")\", $1}' | sed 's/(+,-)/./; s/^\\([^?]\\) *\\./\\1 STAGED/' | column -t -s' ' ; \
+               rm -f $fileA $fileB; \
+    "
+  diff-unselect = "!# Select staged files to unstage them.\n\
+    f() { \
+          git diff-info \
+          | egrep '[^?] *STAGED ' \
+          | fzf -m --header \"$(git diff --shortstat)\" --preview \
+          \"if [[ {1} == '??' ]]; then pygmentize {3}; else git diff --color=always --cached {3}; fi\" \
+          | awk '{print $3}'; \
+    }; f"
+  bselect = "!# Select a branch with preview \n\
+    f() { \
+          _height=$(stty size | awk '{print $1}');\
+          git branch | egrep -v '^\\*' | fzf --preview \"git lg {1} | head -n $_height\"; \
+    }; f"
+  stash-select = "!# Select stash item(s).\n\
+    f() { \
+          git stash-list \
+          | fzf --ansi $1 --preview \"git stash show -p {1} --color=always\" \
+          | cut -d' ' -f1; \
+    }; f"
+  stash-op = "!#A private stash tool for stash\n\
+    f() { git stash-select | xargs git stash $1; }; f"
+  alias-doctor = "!# Check the dependency tools.;\n\
+    f() { \
+          if [ $(which pygmentize | wc -l) -lt 1 ]; then \
+            echo 'Not found : Pygments(pygmentize)'; \
+            echo '    see     : http://pygments.org/'; \
+            echo '    install : pip3 install Pygments'; \
+            echo '';\
+          fi; \
+          if [ $(which fzf | wc -l) -lt 1 ]; then \
+            echo 'Not found : fzf'; \
+            echo '    see          : https://github.com/junegunn/fzf#installation'; \
+            echo '    install(Mac) : brew install fzf'; \
+            echo '    install(git) : git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf'; \
+            echo '                   ~/.fzf/install'; \
+            echo '';\
+          fi; \
+    }; f"
+  alias = "!git config --list | egrep '^alias.+' | sed -e 's/^alias\\.//' | sed -e 's/^[^=]*=/\\'$'\\033[31m&\\033[(B\\033[m/'"
+  al = alias

@@ -1,5 +1,5 @@
 [submodule ".oh-my-zsh"]
-	path = zsh/.oh-my-zsh
+	path = _zsh/.oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "term/iterm"]
 	path = term/iterm
