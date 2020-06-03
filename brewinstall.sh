@@ -13,6 +13,19 @@ brew bundle --file=$HOME/dotfiles/Brewfile
 brew cleanup
 brew cask cleanup
 
+mackup backup
+
 [ ! -f $HOME/.gitconfig ] && ln -bns $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 [ ! -f $HOME/.gitignore_global ] && ln -bns $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
+
+#oh-my-zsh 
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#nvm 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+
+nvm install --lts
+
+npm install --global yarn
+
 
