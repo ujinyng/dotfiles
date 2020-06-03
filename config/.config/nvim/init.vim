@@ -1,1 +1,0 @@
-/Users/ujinyoung/Dropbox/Mackup/.config/nvim/init.vim

@@ -1,0 +1,29 @@
+{
+	"monaco": {
+		"editorOptions": {
+			"minimap": {
+				"enabled": false
+			},
+			"lineNumbers": "off",
+			"scrollBeyondLastLine": false,
+			"wordWrap": "bounded"
+		}
+	},
+	"sorting": {
+		"by": "title",
+		"type": "ascending"
+	},
+	"theme": "dark",
+	"tutorial": false,
+	"cwd": "/Users/ujinyoung/Dropbox/notable",
+	"Options": {
+		"editor": {
+			"wordWrap": "off",
+			"minimap": {
+				"enabled": false
+			},
+			"lineNumbers": "on",
+			"scrollBeyondLastLine": false
+		}
+	}
+}

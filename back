@@ -1,0 +1,103 @@
+#!/usr/bin/env zsh
+
+
+#usage: "back _function" 
+
+#rsync option 
+#-v : print log
+#-h : human readable
+#-a : archive mode : -r, -t(타입스탬프 보존), -l (심볼릭 링크 보존), -p(permission 보존), -g(g그룹 보존), -o(소유자 보존 - root 만 가능),  -D(device, special 파일 보존)과 동일
+#-z : compress
+#-r : recurse into directories
+#-b : backup --suffix ~
+#-u : skip files that are newer on the receiver
+#-R : use relative path naems
+#-L : symbolic link를 따라가서 원본 파일을 복제
+
+help(){
+  echo "back _[GROUP_NAME]
+     GROUP: zsh, vim, tmux, git, fzf, gdb, nodejs, py, etc, brew
+"
+}
+
+_zsh(){
+  # rsync -azvhrubR -L ~/./.zplug/ ~/dotfiles/_zsh
+  rsync -azvhrubR -L ~/./.zshenv ~/dotfiles/_zsh
+  rsync -azvhrubR -L ~/./.zshrc ~/dotfiles/_zsh
+  rsync -azvhrubR -L ~/./.oh-my-zsh/ ~/dotfiles/_zsh
+
+}
+
+_vim(){
+  rsync -azvhrubR -L ~/./.vimrc ~/dotfiles/_vim
+  rsync -azvhrubR -L ~/./.vim/autoload/ ~/dotfiles/_vim
+  rsync -azvhrubR -L ~/./.vim/plugged/ ~/dotfiles/_vim
+  rsync -azvhrubR -L ~/./.config/coc/ ~/dotfiles/_vim
+  rsync -azvhrubR -L ~/./.config/nvim/ ~/dotfiles/_vim
+  rsync -azvhrubR -L ~/./.local/share/nvim/session/ ~/dotfiles/_vim
+  rsync -azvhrubR -L ~/./.NERDTreeBookmarks ~/dotfiles/_vim
+  # rsync -azvhrubR -L ~/./.local/share/nvim/site ~/dotfiles/vim
+  # rsync -azvhrubR -L ~/./.viminfo/ ~/dotfiles/vim
+}
+
+_tmux(){
+  # cp -Riv --parents ~/.tmux.conf ~/dotfiles/tmux/.tmux.conf
+  rsync -azvhrubR -L ~/./.tmux.conf ~/dotfiles/_tmux
+  # rsync -azvhrubR -L ~/./.tmux/plugins/ ~/dotfiles/tmux
+}
+
+_git(){
+  # cp -Riv --parents ~/.gitconfig ~/dotfiles/git/.gitconfig
+  # cp -Riv --parents ~/.gitignore_global ~/dotfiles/git/.gitignore_global
+  rsync -azvhrubR -L ~/./.gitconfig ~/dotfiles/_git
+  rsync -azvhrubR -L ~/./.gitignore_global ~/dotfiles/_git
+}
+
+_fzf(){
+  # cp -Riv --parents ~/.fzfignore ~/dotfiles/fzf/.fzfignore
+  # cp -Riv --parents ~/.fzf.zsh ~/dotfiles/fzf/.fzf.zsh
+  rsync -azvhrubR -L ~/./.fzfignore/ ~/dotfiles/_fzf
+  rsync -azvhrubR -L ~/./.fzf.zsh/ ~/dotfiles/_fzf
+}
+
+_gdb(){
+  # cp -Riv --parents ~/.gdbinit ~/dotfiles/gdb/.gdbinit
+  # cp -Riv --parents ~/gdb.xml ~/dotfiles/gdb/gdb.xml
+  # cp -Riv --parents ~/makefile ~/dotfiles/gdb/makefile
+  rsync -azvhrubR -L ~/./.gdbinit ~/dotfiles/_gdb
+  rsync -azvhrubR -L ~/./gdb.xml ~/dotfiles/_gdb
+  rsync -azvhrubR -L ~/./makefile ~/dotfiles/_gdb
+}
+
+_nodejs(){
+  # cp -Riv --parents ~/.yarn ~/dotfiles/nodejs/.yarn
+  # cp -Riv --parents ~/.nvm ~/dotfiles/nodejs/.nvm
+  # cp -Riv --parents ~/.config/yarn ~/dotfiles/nodejs/.config/yarn
+  # cp -Riv --parents ~/.config/gatsby ~/dotfiles/nodejs/.config/gatsby
+  # cp -Riv --parents ~/.config/configstore ~/dotfiles/nodejs/.config/configstore
+
+  rsync -azvhrubR -L ~/./.nvm/ ~/dotfiles/_nodejs
+  rsync -azvhrubR -L ~/./.config/yarn/ ~/dotfiles/_nodejs
+  rsync -azvhrubR -L ~/./.config/gatsby/ ~/dotfiles/_nodejs
+  rsync -azvhrubR -L ~/./.config/configstore/ ~/dotfiles/_nodejs
+}
+
+_py(){
+  rsync -azvhrubR -L ~/./.pyenv/ ~/dotfiles/_py
+  rsync -azvhrubR -L ~/./piplist ~/dotfiles/_py
+}
+
+_etc(){
+  rsync -azvhrubR -L ~/./.docker/ ~/dotfiles/_etc
+  rsync -azvhrubR -L ~/./.fasd ~/dotfiles/_etc
+  rsync -azvhrubR -L ~/./.notable.json/ ~/dotfiles/_etc
+  rsync -azvhrubR -L ~/./.skhdrc ~/dotfiles/_etc
+  rsync -azvhrubR -L ~/./.yabairc ~/dotfiles/_etc
+  rsync -azvhrubR -L ~/./.yarnrc ~/dotfiles/_etc
+}
+
+_brew(){
+  rsync -azvhrubR -L ~/./Brewfile ~/dotfiles/Brewfile
+}
+
+$@
