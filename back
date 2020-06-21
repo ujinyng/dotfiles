@@ -77,19 +77,20 @@ _nodejs(){
   # cp -Riv --parents ~/.config/configstore ~/dotfiles/nodejs/.config/configstore
 
   rsync -azvhrubR -L ~/./.nvm/ ~/dotfiles/_nodejs
-  rsync -azvhrubR -L ~/./.config/yarn/ ~/dotfiles/_nodejs
+  rsync -azvhrubR -L ~/./.config/yarn/global/yarn.lock ~/dotfiles/_nodejs
+  rsync -azvhrubR -L ~/./.config/yarn/global/package.json ~/dotfiles/_nodejs
   rsync -azvhrubR -L ~/./.config/gatsby/ ~/dotfiles/_nodejs
   rsync -azvhrubR -L ~/./.config/configstore/ ~/dotfiles/_nodejs
 }
 
 _py(){
-  rsync -azvhrubR -L ~/./.pyenv/ ~/dotfiles/_py
+  rsync -azvhrubR -L ~/./.pyenv/version/ ~/dotfiles/_py
   rsync -azvhrubR -L ~/./piplist ~/dotfiles/_py
 }
 
 _etc(){
   rsync -azvhrubR -L ~/./.docker/ ~/dotfiles/_etc
-  rsync -azvhrubR -L ~/./.fasd ~/dotfiles/_etc
+  # rsync -azvhrubR -L ~/./.fasd ~/dotfiles/_etc
   rsync -azvhrubR -L ~/./.notable.json/ ~/dotfiles/_etc
   rsync -azvhrubR -L ~/./.skhdrc ~/dotfiles/_etc
   rsync -azvhrubR -L ~/./.yabairc ~/dotfiles/_etc
@@ -98,6 +99,12 @@ _etc(){
 
 _brew(){
   rsync -azvhrubR -L ~/./Brewfile ~/dotfiles/Brewfile
+}
+
+_rclone(){
+  rsync -azvhrubR -L ~/./rclone_mount.sh ~/dotfiles/_rclone
+  rsync -azvhrubR -L ~/./rclone_umount.sh ~/dotfiles/_rclone
+  rsync -azvhrubR -L ~/./.config/rclone ~/dotfiles/_rclone
 }
 
 $@
