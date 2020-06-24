@@ -2,4 +2,4 @@
 
 diskutil umount ~/Gdrive || umount ~/Gdrive
 
-diskutil umount ~/Dbox || umount ~/Dbox
+# diskutil umount ~/Dbox || umount ~/Dbox
