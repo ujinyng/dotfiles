@@ -47,6 +47,7 @@ yab(){
   elif [[ "$OPTIND" -eq 1 ]]
     then
     echo "No options were passed"
+    usage
   fi
 
   shift "$((OPTIND -1))"
@@ -124,4 +125,4 @@ uninstall(){
   ##    crsutil enable \n"
 }
 
-usage 
+yab 

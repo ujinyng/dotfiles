@@ -26,6 +26,7 @@
   unstage = "!# Select staged files and Unstage them.\n\
              git diff-unselect | xargs git reset HEAD" 
   un = unstage
+  rmcache = "!git rm -r --cached ."
   sync = "!Sync with a [branch] in the remote repo \n\
           f() { git fetch $1 && git reset --hard $1/$(git b0); }; f"
   sync2 = "!# Sync with a branch with the same name in the remote repo.\n\

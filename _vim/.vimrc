@@ -8,7 +8,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 "Plug 'tomasiser/vim-code-dark'
-"Plug 'dracula/vim'
+"Plug 'dracula/vim
 Plug 'ujinyng/candid-custom.vim' "Plug 'flrnd/candid.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -287,12 +287,12 @@ endfunction
 "---------buffer setting---------
 set hidden "탭없이버퍼사용할때 필수, 버퍼 수정 직후 버퍼를 감춰지도록 함"
 "open new buffer with startify
-nnoremap <silent><S-t> :enew<CR>:Startify<CR>
+" nnoremap <silent><S-t> :enew<CR>:Startify<CR>
 "split and open new buffer with startify"
-nnoremap <silent><S-s>t :sp<CR>:Startify<CR>
+nnoremap <silent><S-t> :sp<CR>:Startify<CR>
 nnoremap <C-p> :bprevious!<CR> "이전 버퍼로 이동
 nnoremap <C-n> :bnext!<CR> "다음 버퍼로 이동
-nnoremap <silent><S-q> :bp <BAR> bd #<CR> "현재버퍼를 닫고 이전 버퍼로 이동
+nnoremap <silent><C-q> :bp <BAR> bd #<CR> "현재버퍼를 닫고 이전 버퍼로 이동
 ":ls는 모든버퍼와 버퍼의상태를 출력함
 ":b <번호>
 ":e <파일경로>
@@ -543,7 +543,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "------------------vimwiki----------------------------------
 let g:vimwiki_list = [
   \{
-        \               'path': '~/Dropbox/vimwiki',
+        \               'path': '~/Dbox/vimwiki',
         \               'ext': '.md',
         \               'diary_rel_path': '.'
         \}]
@@ -626,7 +626,7 @@ let g:startify_bookmarks = [
  \ {'zs':'~/.zshrc'},
  \ {'ze':'~/.zshenv'},
  \ {'zp':'~/.zprofile'},
- \ {'wi':'~/Dropbox/vimwiki'},
+ \ {'wi':'~/Dropbox/vimwiki/index.md'},
  \ {'tm':'~/.tmux.conf'},
  \ {'co':'~/.config/nvim/coc-settings.json'},
  \ {'gi':'~/.gitconfig'}]
@@ -698,9 +698,10 @@ set smartcase "결과에 대문자가 있으면 대문자가 들어가는거만 
 set hlsearch "Highlight search result
 set incsearch "Make search act like search in modern browsers
 
-"use mouse or not
+"use mouse for visual mode or not
 set mouse=a
 "set mouse=-a
+set mousefocus
 
 set showcmd "키보드 눌러서 사용하는 명령어보여줌
 set visualbell "beep대신에 visual bell 사용

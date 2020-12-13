@@ -296,11 +296,10 @@ gpg(){
   g++ -g ${1%.*}.cc -std=c++14 -pthread -O3 -o $1
 }
 
+# rsync: alternative to cp 
 alias rsync="/usr/local/bin/rsync"
 alias rs=/usr/local/bin/rsync -azvhrubR
-#-L/-l: transform symlink into referent file,dir / copy symlink as symlink
+##-L/-l: transform symlink into referent file,dir / copy symlink as symlink
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH="/usr/local/sbin:$PATH"

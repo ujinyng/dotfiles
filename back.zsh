@@ -13,13 +13,15 @@
 #-u : skip files that are newer on the receiver
 #-R : use relative path naems
 #-L : symbolic link를 따라가서 원본 파일을 복제
-
 help(){
   echo "back _[GROUP_NAME]
      GROUP: zsh, vim, tmux, git, fzf, gdb, nodejs, py, etc, brew
 "
 }
 
+(){
+  help
+}
 _zsh(){
   # rsync -azvhrubR -L ~/./.zplug/ ~/dotfiles/_zsh
   rsync -azvhrubR -L ~/./.zshenv ~/dotfiles/_zsh
@@ -92,12 +94,15 @@ _etc(){
   rsync -azvhrubR -L ~/./.docker/ ~/dotfiles/_etc
   # rsync -azvhrubR -L ~/./.fasd ~/dotfiles/_etc
   rsync -azvhrubR -L ~/./.notable.json/ ~/dotfiles/_etc
-  rsync -azvhrubR -L ~/./.skhdrc ~/dotfiles/_etc
-  rsync -azvhrubR -L ~/./.yabairc ~/dotfiles/_etc
+ # rsync -azvhrubR -L ~/./.skhdrc ~/dotfiles/_etc
+ # rsync -azvhrubR -L ~/./.yabairc ~/dotfiles/_etc
   rsync -azvhrubR -L ~/./.yarnrc ~/dotfiles/_etc
 }
 
 _brew(){
+  rm ~/dotfiles/Brewfile~
+  mv ~/dotfiles/Brewfile ~/dotfiles/Brewfile~
+  brew bundle dump --force --file=~/./Brewfile
   rsync -azvhrubR -L ~/./Brewfile ~/dotfiles/Brewfile
 }
 
@@ -107,4 +112,17 @@ _rclone(){
   rsync -azvhrubR -L ~/./.config/rclone ~/dotfiles/_rclone
 }
 
+ _all(){
+ # _rclone
+  _brew
+  _etc
+  _py
+  _nodejs
+  _gdb
+  _fzf
+  _vim
+  _git
+  _tmux
+  _zsh
+  }
 $@

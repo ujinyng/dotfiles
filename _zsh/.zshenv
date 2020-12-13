@@ -7,7 +7,7 @@ export MYVIMRC="/Users/ujinyoung/.vimrc"
 export VIMINIT=":set runtimepath^=/Users/ujinyoung/.vim|:source $MYVIMRC"
 
 export EDITOR="/usr/local/bin/nvim"
-export VIM="/usr/local/Cellar/neovim/0.4.3/share/nvim"
+export VIM="/usr/local/Cellar/neovim/0.4.4/share/nvim"
 
 export PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 
@@ -60,10 +60,12 @@ export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
 # CPPFLAGS += -I/usr/local/opt/llvm/include/c++/v1/
 
-# nvm
+# nvm yarn
 export PATH="/usr/local/Cellar/node/v12.16.2/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules"
 export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="$(yarn global bin):$PATH"
 
 #libffi
@@ -77,8 +79,22 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 
 # For compilers to find icu4c you may need to set:
-export LDFLAGS="-L/usr/local/opt/icu4c/lib"
-export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+#export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+#export CPPFLAGS="-I/usr/local/opt/icu4c/include"
 
 # For pkg-config to find icu4c you may need to set:
 export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+
+#export LDFLAGS="-L/usr/local/opt/zlib/lib:$LDFLAGS"
+#export CPPFLAGS="-I/usr/local/opt/zlib/include:$LDFLAGS"
+
+# python pyenv conda
+export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_VERSION=3.6.4 #=anaconda3-5.3.1 #3.6.0
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+. /Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/etc/profile.d/conda.sh
+
+# selenium chromedriver
+export PATH="/Users/ujinyoung/selenium:$PATH"
