@@ -61,7 +61,8 @@ export CPPFLAGS="-I/usr/local/opt/llvm/include"
 # CPPFLAGS += -I/usr/local/opt/llvm/include/c++/v1/
 
 # nvm yarn
-export PATH="/usr/local/Cellar/node/v12.16.2/bin:$PATH"
+#export PATH="/usr/local/Cellar/node/v12.16.2/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v14.15.3/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

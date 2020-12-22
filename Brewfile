@@ -28,8 +28,6 @@ brew "mackup"
 brew "mas"
 brew "mono", link: false
 brew "neovim"
-brew "node", link: false
-brew "nvm"
 brew "opencv"
 brew "pyenv"
 brew "pyenv-virtualenv"
@@ -76,3 +74,34 @@ cask "teamviewer"
 cask "twitch"
 cask "typora"
 cask "visual-studio-code"
+cask "zoom"
+mas "Allkdic", id: 1033453958
+mas "Be Focused", id: 973134470
+mas "com.alice.mac.GetPlainText", id: 508368068
+mas "Elmedia Video Player", id: 1044549675
+mas "Filmage Screen", id: 1475049179
+mas "Flycut", id: 442160987
+mas "Friendly Streaming", id: 553245401
+mas "GarageBand", id: 682658836
+mas "Ghostery Lite", id: 1436953057
+mas "GIPHY CAPTURE", id: 668208984
+mas "GoodNotes", id: 1444383602
+mas "Grammarly for Safari", id: 1462114288
+mas "Hancom Office HWP 2014 VP Viewer", id: 416746898
+mas "iMovie", id: 408981434
+mas "KakaoTalk", id: 869223134
+mas "Keynote", id: 409183694
+mas "LINER", id: 1463530746
+mas "Mathpix Snipping Tool", id: 1349670778
+mas "Memory Diag", id: 748212890
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pasta", id: 1438389787
+mas "PhotoScape X", id: 929507092
+mas "Pine Player", id: 1112075769
+mas "Polaris Office", id: 1098211970
+mas "Save to Pocket", id: 1477385213
+mas "Scrap Paper", id: 1448441317
+mas "Spark", id: 1176895641
+mas "Xcode", id: 497799835
+mas "xFormula", id: 1503622988
