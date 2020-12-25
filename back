@@ -118,7 +118,7 @@ _rclone(){
   _etc
   _py
   _nodejs
-  _gdb
+ # _gdb
   _fzf
   _vim
   _git
