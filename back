@@ -15,13 +15,18 @@
 #-L : symbolic link를 따라가서 원본 파일을 복제
 help(){
   echo "back _[GROUP_NAME]
-     GROUP: zsh, vim, tmux, git, fzf, gdb, nodejs, py, etc, brew
+     GROUP: zsh, vim, tmux, git, fzf, gdb, nodejs, py, etc, brew, karabiner
 "
 }
 
 (){
   help
 }
+
+_karabiner(){
+  rsync -azvhrubR -L ~/./.config/karabiner ~/dotfiles/_karabiner
+}
+
 _zsh(){
   # rsync -azvhrubR -L ~/./.zplug/ ~/dotfiles/_zsh
   rsync -azvhrubR -L ~/./.zshenv ~/dotfiles/_zsh
@@ -124,5 +129,6 @@ _rclone(){
   _git
   _tmux
   _zsh
+  _karabiner
   }
 $@

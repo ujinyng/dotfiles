@@ -7,13 +7,13 @@ If command
 ```
 $ back _all
 ```
-backup zsh, vim, tmux, git, fzf, nodejs, py, brew, etc
+backup zsh, vim, tmux, git, fzf, nodejs, py, brew, etc, karabiner
 
 `_all` is not contain rclone and gdb
 
 ### other option
 
-option: zsh, vim, tmux, git, fzf, nodejs, py, brew, etc, rclone, gdb
+option: zsh, vim, tmux, git, fzf, nodejs, py, brew, etc, karabiner, rclone, gdb
 
 ## Restore
 
