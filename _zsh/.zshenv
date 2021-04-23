@@ -43,12 +43,6 @@ export FZF_PATH_COMPLETION_OPTS=$FZF_HIGHLIGHT_PREVIEW_OPTS
 
 export FZF_TMUX=1
 
-export PATH="/Users/ujinyoung/.pyenv/shims:${PATH}"
-export PYENV_SHELL=zsh
-
-export PYENV_ROOT='/Users/ujinyoung/.pyenv'
-export PYENV_VERSION=3.7.6
-export PYENV_VERSION='system'
 
 export HL_CONFIG_DIR='/usr/local/etc/highlight'
 export HL_DATA_DIR='/usr/local/Cellar/highlight/3.55/share/highlight'
@@ -56,8 +50,8 @@ PATH=${PATH}:~/Downloads
 
 export VIMWIKI='~/Dropbox/vimwiki'
 export PATH="/usr/local/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/llvm/include:$CPPFLAGS"
 # CPPFLAGS += -I/usr/local/opt/llvm/include/c++/v1/
 
 # nvm yarn
@@ -70,9 +64,9 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$(yarn global bin):$PATH"
 
 #libffi
-export CPPFLAGS="-I/usr/local/opt/libffi/include"
-export LDFLAGS="-L/usr/local/opt/libffi/lib"
-export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+export CPPFLAGS="-I/usr/local/opt/libffi/include:$CPPFLAGS"
+export LDFLAGS="-L/usr/local/opt/libffi/lib:$LDFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 #icu4c
 # If you need to have icu4c first in your PATH run:
@@ -80,22 +74,97 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 
 # For compilers to find icu4c you may need to set:
-#export LDFLAGS="-L/usr/local/opt/icu4c/lib"
-#export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+export LDFLAGS="-L/usr/local/opt/icu4c/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/icu4c/include:$CPPFLAGS"
 
 # For pkg-config to find icu4c you may need to set:
-export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
-
-#export LDFLAGS="-L/usr/local/opt/zlib/lib:$LDFLAGS"
-#export CPPFLAGS="-I/usr/local/opt/zlib/include:$LDFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # python pyenv conda
+export CPPFLAGS="-I/usr/local/opt/zlib/include:$LDFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LDFLAGS="-L/usr/local/opt/zlib/lib:$LDFLAGS"
+export PATH="/Users/ujinyoung/.pyenv/shims:${PATH}"
+
 export PYENV_ROOT="$HOME/.pyenv"
-export PYENV_VERSION=3.6.4 #=anaconda3-5.3.1 #3.6.0
+export PYENV_VERSION=3.8.7 #=anaconda3-5.3.1 #3.6.0
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-. /Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/etc/profile.d/conda.sh
 
 # selenium chromedriver
 export PATH="/Users/ujinyoung/selenium:$PATH"
+
+#openssl@1.1
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+#readline
+export LDFLAGS="-L/usr/local/opt/readline/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/readline/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+#sqlite
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/sqlite/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/sqlite/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+#tcl-tk
+#export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+#   export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
+#  export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
+# export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"
+
+# libxml2
+#export PATH="/usr/local/opt/libxml2/bin:$PATH"
+# export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+# export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+# export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+
+#libffi
+#  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+#  export CPPFLAGS="-I/usr/local/opt/libffi/include"
+#  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
+#guile
+#export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
+#export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
+#export GUILE_SYSTEM_EXTENSIONS_PATH="/usr/local/lib/guile/3.0/extensions"
+
+#gnu-getopt
+# export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+
+#sphinx-doc
+#export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
+
+#mono
+#To use the assemblies from other formulae you need to set:
+#export MONO_GAC_PREFIX="/usr/local"
+
+#openblas
+#For compilers to find openblas you may need to set:
+#export LDFLAGS="-L/usr/local/opt/openblas/lib"
+#export CPPFLAGS="-I/usr/local/opt/openblas/include"
+
+#For pkg-config to find openblas you may need to set:
+# export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
+
+#qt
+export PATH="/usr/local/opt/qt/bin:$PATH"
+
+# export LDFLAGS="-L/usr/local/opt/qt/lib"
+# export CPPFLAGS="-I/usr/local/opt/qt/include"
+# export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
+
+#mozjpeg
+#export PATH="/usr/local/opt/mozjpeg/bin:$PATH"
+#export LDFLAGS="-L/usr/local/opt/mozjpeg/lib"
+# export CPPFLAGS="-I/usr/local/opt/mozjpeg/include"
+#export PKG_CONFIG_PATH="/usr/local/opt/mozjpeg/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+#python@3.8
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/python@3.8/lib:$LDFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig:$PKG_CONFIG_PATH"
+

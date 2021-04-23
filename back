@@ -15,8 +15,9 @@
 #-L : symbolic link를 따라가서 원본 파일을 복제
 help(){
   echo "back _[GROUP_NAME]
-     GROUP: zsh, vim, tmux, git, fzf, gdb, nodejs, py, etc, brew, karabiner
-"
+     GROUP: zsh, vim, tmux, git, fzf, gdb, yarn, py, etc, brew, karabiner
+     or 'a' in place of GROUP for principal things
+    "
 }
 
 (){
@@ -76,23 +77,24 @@ _gdb(){
   rsync -azvhrubR -L ~/./makefile ~/dotfiles/_gdb
 }
 
-_nodejs(){
+_yarn(){
   # cp -Riv --parents ~/.yarn ~/dotfiles/nodejs/.yarn
   # cp -Riv --parents ~/.nvm ~/dotfiles/nodejs/.nvm
   # cp -Riv --parents ~/.config/yarn ~/dotfiles/nodejs/.config/yarn
   # cp -Riv --parents ~/.config/gatsby ~/dotfiles/nodejs/.config/gatsby
   # cp -Riv --parents ~/.config/configstore ~/dotfiles/nodejs/.config/configstore
 
-  rsync -azvhrubR -L ~/./.nvm/ ~/dotfiles/_nodejs
-  rsync -azvhrubR -L ~/./.config/yarn/global/yarn.lock ~/dotfiles/_nodejs
-  rsync -azvhrubR -L ~/./.config/yarn/global/package.json ~/dotfiles/_nodejs
-  rsync -azvhrubR -L ~/./.config/gatsby/ ~/dotfiles/_nodejs
-  rsync -azvhrubR -L ~/./.config/configstore/ ~/dotfiles/_nodejs
+  # rsync -azvhrubR -L ~/./.nvm/ ~/dotfiles/_yarn
+  rsync -azvhrubR -L ~/./.yarn/yarn.lock ~/dotfiles/_yarn
+  rsync -azvhrubR -L ~/./.yarn/package.json ~/dotfiles/_yarn
+  rsync -azvhrubR -L ~/./.yarnrc ~/dotfiles/_yarn
+  # rsync -azvhrubR -L ~/./.config/gatsby/ ~/dotfiles/_yarn
+  # rsync -azvhrubR -L ~/./.config/configstore/ ~/dotfiles/_yarn
 }
 
 _py(){
   rsync -azvhrubR -L ~/./.pyenv/version/ ~/dotfiles/_py
-  rsync -azvhrubR -L ~/./piplist ~/dotfiles/_py
+  # rsync -azvhrubR -L ~/./piplist ~/dotfiles/_py
 }
 
 _etc(){
@@ -101,7 +103,6 @@ _etc(){
   rsync -azvhrubR -L ~/./.notable.json/ ~/dotfiles/_etc
  # rsync -azvhrubR -L ~/./.skhdrc ~/dotfiles/_etc
  # rsync -azvhrubR -L ~/./.yabairc ~/dotfiles/_etc
-  rsync -azvhrubR -L ~/./.yarnrc ~/dotfiles/_etc
 }
 
 _brew(){
@@ -122,7 +123,7 @@ _rclone(){
   _brew
   _etc
   _py
-  _nodejs
+  _yarn
  # _gdb
   _fzf
   _vim

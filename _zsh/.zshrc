@@ -301,5 +301,11 @@ alias rsync="/usr/local/bin/rsync"
 alias rs=/usr/local/bin/rsync -azvhrubR
 ##-L/-l: transform symlink into referent file,dir / copy symlink as symlink
 
-
 export PATH="/usr/local/sbin:$PATH"
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+# source $HOME/.pyenv/versions/miniconda-3.8.3/etc/fish/conf.d/conda.fish #etc/profile.d/conda.sh
+
+# yarn global
+export PATH="$(yarn global bin):$PATH"

@@ -43,6 +43,15 @@ _install(){
 
   npm install --global yarn
   
+  #yarn global path
+  yarn config set prefix ~/.yarn 
+  yarn config get prefix
+  cat ~/.yarnc 
+
+  # autoenv
+  source /usr/local/opt/autoenv/activate.sh
+
+  
 }
 
 $@

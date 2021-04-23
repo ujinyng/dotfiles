@@ -7,106 +7,54 @@
     "INTERPRETERS_CACHE_v3_CondaEnvFileService": [
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/chatbot/bin/python",
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.10-final",
+          "raw": "3.7.4-final",
           "major": 3,
-          "minor": 6,
-          "patch": 10,
+          "minor": 7,
+          "patch": 4,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.10-final"
+          "version": "3.7.4-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/chatbot",
-        "fileHash": "8dfd50f3bde65346edc338366a99859d66aca9a25eabc3bf5daafa253362c423e4c658448288a40d516e432d5e332a4d6f519c07fe96c60f0b6b3a4d928f51c3",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+        "fileHash": "6dd41cf4bf5cecfb83b06dd0987874cd4ab1acc3e559fa1f43bd53ea9d0b2c44f081c1e671d4f2f7e25df3079ff6fd18428ce0a0981b4d737b93b68df617100f",
         "companyDisplayName": "Anaconda, Inc.",
         "type": "Conda",
-        "envPath": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/chatbot",
-        "envName": "chatbot"
+        "envPath": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+        "envName": "miniconda3-4.7.12"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python",
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.3-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 3,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.3-final"
+          "version": "3.7.9-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1",
-        "fileHash": "586170e5ed77c577e6a005a4ad1959466f18cb2ba0377ede91460eaac0255d89e2c810a20f68bcc461f323d14689e2ae8f77133f1fc372b8d27799501fc91252",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel",
+        "fileHash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700",
         "companyDisplayName": "Anaconda, Inc.",
         "type": "Conda",
-        "envPath": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1",
-        "envName": "anaconda3-5.3.1"
-      },
-      {
-        "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nengo-rl/bin/python",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.7.5-final",
-          "major": 3,
-          "minor": 7,
-          "patch": 5,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.7.5-final"
-        },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nengo-rl",
-        "fileHash": "1b810b4c5a6b1674ca2f9542c86c6f7fd7ffba54ad068217092980feee8b3013262fcdd01612fc45bf6da9338c4f2b7f86fbcb5629696eea325e0f54be40c5a3",
-        "companyDisplayName": "Anaconda, Inc.",
-        "type": "Conda",
-        "envPath": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nengo-rl",
-        "envName": "nengo-rl"
-      },
-      {
-        "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel/bin/python",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.7.7-final",
-          "major": 3,
-          "minor": 7,
-          "patch": 7,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.7.7-final"
-        },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel",
-        "fileHash": "29c467065b162ff41d929e7c4474617297ce1f8c014eaaffdb7dc8c077b498c7c0c235141c33eb4b8c31361c7d3ad06d104136c346b2ccac176fd069d6e5b081",
-        "companyDisplayName": "Anaconda, Inc.",
-        "type": "Conda",
-        "envPath": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel",
+        "envPath": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel",
         "envName": "aiffel"
       }
     ],
@@ -114,219 +62,219 @@
     "INTERPRETERS_CACHE_v3_VirtualEnvService": [
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python",
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "688e0f46e8369ea34990c1b31a06bad09391dc8debac8831d586dfabc0f58ce2ada1cec80f770add6b610ebff97213f39393471d20df5e73fe88b53ec8408f1a",
-        "envName": "3.6.4",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "9a2ea24b043f07cf5039a496e13d9557e96c366c99dc0cadbff30b2c232b156af8f1802620dfda3ab70d032520a81cee576f8c4ccd79861fc89a3e03da681e88",
+        "envName": "3.8.7",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python3",
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python3",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "6f24de96b8216a7b19a03a44943277f9e8cf082c573d88cd37f0d09ec2f62ffb673c06a8bc8de8b8bd08d5f24cea6c1ed48e0a183848a14f21e4385422ff9b9f",
-        "envName": "3.6.4",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "d4a7a83f66a4ffd08a0ca529886bf4e2a723db4c405f654f8c45bb3869d4c66a0b80b75e39f7a4db921e06bf170bca7d5f4078bfe6a3e6331b532d8b269a4d76",
+        "envName": "3.8.7",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python3.6",
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python3.8",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "b4ebfe701421e121c9a3ff290fbc158b55c32c86d62610c2919b751e2f78e602357ea1864c8666bd191123773f938c567cd80a3cde36daa107c1e0744444d770",
-        "envName": "3.6.4",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "084be457d45ddcd386782f24216e7d591bbf1e7f85f22489b93fef0b802d080f9500998d9f8bad89929d1cfc942849de06e6dcecdd464085fb097e237f71a4e6",
+        "envName": "3.8.7",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python",
+        "path": "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.3-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 3,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.3-final"
+          "version": "3.7.9-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1",
-        "fileHash": "586170e5ed77c577e6a005a4ad1959466f18cb2ba0377ede91460eaac0255d89e2c810a20f68bcc461f323d14689e2ae8f77133f1fc372b8d27799501fc91252",
-        "envName": "anaconda3-5.3.1",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/aiffel",
+        "fileHash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700",
+        "envName": "aiffel",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python3",
+        "path": "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python3",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.3-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 3,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.3-final"
+          "version": "3.7.9-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1",
-        "fileHash": "2cce40362db7e43ce588bf34fad1a8de96cedee3bb06f4ddf7a0a82aab83e22d39e672be0b5cff096d28d540e25967f9b4e598bdebac1b67b2f0058f946ee4fe",
-        "envName": "anaconda3-5.3.1",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/aiffel",
+        "fileHash": "3e535c5570ff7d3bf2f7d9e9bd7d3a25a10da0dfec998c240b76eebac0110fa44aa2b9c44780dfb88cb31175c33d2e80491cd2c44c1f73fda1f7518d10847255",
+        "envName": "aiffel",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python3.7",
+        "path": "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python3.7",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.3-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 3,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.3-final"
+          "version": "3.7.9-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1",
-        "fileHash": "ead31c37ffeb1188faf2ee22e93ca2933b9443c3cff7cb6ec27732b496116a6aebfd1452ef87ab6af980884b7df790085f4ac43dbb8b3aadd14ab119082b7226",
-        "envName": "anaconda3-5.3.1",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/aiffel",
+        "fileHash": "ae977fb9806410e2e2e38a60787210027cbd14e944f50fba1e1177b4ad26f07f993bbbae5466316bd990b134fa8cf40e8d793fb2be6d190f98a1c2187cb682d9",
+        "envName": "aiffel",
         "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/selenium/bin/python",
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.7.4-final",
           "major": 3,
-          "minor": 6,
+          "minor": 7,
           "patch": 4,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.7.4-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/selenium",
-        "fileHash": "2a77eafd9941507f16d00386531f9e43e494c7a26b2f7f38536e447a1ef85eefea655bbf3bf6ed7ae3f96d943c572a94f61425023267cdd22cba529c6051126d",
-        "envName": "selenium",
-        "type": "Venv"
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+        "fileHash": "6dd41cf4bf5cecfb83b06dd0987874cd4ab1acc3e559fa1f43bd53ea9d0b2c44f081c1e671d4f2f7e25df3079ff6fd18428ce0a0981b4d737b93b68df617100f",
+        "envName": "miniconda3-4.7.12",
+        "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/selenium/bin/python3",
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python3",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.7.4-final",
           "major": 3,
-          "minor": 6,
+          "minor": 7,
           "patch": 4,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.7.4-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/selenium",
-        "fileHash": "5d266c201b9d7ad2640a2233bb50f6f66af8e80c92db2c1ce7979ad9207a152c774accc3c75b7f8ec6836dbc0d05ce0d03ffb75f48fe0657250670d0f77298a0",
-        "envName": "selenium",
-        "type": "Venv"
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+        "fileHash": "db5db41b701c98a83c8b07a8d47066930d1973f2a7b8da18b22446d35aa247ccfff8675eef6daee398aa144be920ec5d0d0e5b1075f4b69002ca68b7e068c26d",
+        "envName": "miniconda3-4.7.12",
+        "type": "Pyenv"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/selenium/bin/python3.6",
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python3.7",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.7.4-final",
           "major": 3,
-          "minor": 6,
+          "minor": 7,
           "patch": 4,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.7.4-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/selenium",
-        "fileHash": "d36d76285f644e423f40d297eb7ecebded701919294bbee6b44e91f3a383ad3a606b0afc19a8b40bd2d5e41633cd48125f24ef1091c485668668ae37926909e7",
-        "envName": "selenium",
-        "type": "Venv"
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+        "fileHash": "614244bfd346304f45ceb7b4421a6941601b23c53d2a500df9a82e53d7a7bfa78b051cee44bc90e863e483e02919fb097bb00def1785598d770d4b02bd6fefac",
+        "envName": "miniconda3-4.7.12",
+        "type": "Pyenv"
       }
     ],
     "/usr/local/bin/python3.7.v3": {
@@ -364,20 +312,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.8.6-final",
+          "raw": "3.9.4-final",
           "major": 3,
-          "minor": 8,
-          "patch": 6,
+          "minor": 9,
+          "patch": 4,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.6-final"
+          "version": "3.9.4-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-        "fileHash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065"
+        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13"
       },
-      "expiry": 1607504508128
+      "expiry": 1618376363315
     },
     "/usr/local/opt/python/bin/python3.7.v3": {
       "data": {
@@ -425,9 +373,9 @@
           "version": "2.7.16-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "32155ca5edb3a60357185ab7b7d3b4191e4c6856fd20c2a65b74845f4a588ed4f9a8dd461fdbe2e0f26b75105be8d430fda6a3b7344172f0733bbb9d1ab175f1"
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1607504508058
+      "expiry": 1618376363265
     },
     "/usr/bin/python2.7.v3": {
       "data": {
@@ -450,9 +398,9 @@
           "version": "2.7.16-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "55d1e13184e54da406989a11e499fcb95768d4f943c3e27ffd2cec7611f919412fd07a69d9f6a1f78a65a8db48e16cf9d73ade5743b63178ce9a38c3b446a453"
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1607504508064
+      "expiry": 1618376363261
     },
     "/usr/bin/python.v3": {
       "data": {
@@ -475,9 +423,9 @@
           "version": "2.7.16-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "eac0471206fec8e0c2b021ae1be130351d8b761fc45854675dfb732719e562accf0b4c482a9e9ccb14305a3a4d525a5e3a2696c558a01754c16937d1704465d4"
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1607504508061
+      "expiry": 1618376363269
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.v3": {
       "data": {
@@ -500,55 +448,32 @@
           "version": "2.7.16-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "bc30685281bb225ccd15872be5a7d659c18f265e9fcbd8e2bd861cf59c91c08e809f70f68391822449082f7f5c93553823a8db9131cc4a5c4e76d37aa5671caa"
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1607504508117
+      "expiry": 1618376363366
     },
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python3.6",
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python3",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "b4ebfe701421e121c9a3ff290fbc158b55c32c86d62610c2919b751e2f78e602357ea1864c8666bd191123773f938c567cd80a3cde36daa107c1e0744444d770",
-        "type": "Unknown"
-      },
-      {
-        "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python3",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.6.4-final",
-          "major": 3,
-          "minor": 6,
-          "patch": 4,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.6.4-final"
-        },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "6f24de96b8216a7b19a03a44943277f9e8cf082c573d88cd37f0d09ec2f62ffb673c06a8bc8de8b8bd08d5f24cea6c1ed48e0a183848a14f21e4385422ff9b9f",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "d4a7a83f66a4ffd08a0ca529886bf4e2a723db4c405f654f8c45bb3869d4c66a0b80b75e39f7a4db921e06bf170bca7d5f4078bfe6a3e6331b532d8b269a4d76",
         "type": "Unknown"
       },
       {
@@ -571,80 +496,56 @@
           "version": "2.7.16-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "bc30685281bb225ccd15872be5a7d659c18f265e9fcbd8e2bd861cf59c91c08e809f70f68391822449082f7f5c93553823a8db9131cc4a5c4e76d37aa5671caa",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python",
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "688e0f46e8369ea34990c1b31a06bad09391dc8debac8831d586dfabc0f58ce2ada1cec80f770add6b610ebff97213f39393471d20df5e73fe88b53ec8408f1a",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "9a2ea24b043f07cf5039a496e13d9557e96c366c99dc0cadbff30b2c232b156af8f1802620dfda3ab70d032520a81cee576f8c4ccd79861fc89a3e03da681e88",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python",
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "688e0f46e8369ea34990c1b31a06bad09391dc8debac8831d586dfabc0f58ce2ada1cec80f770add6b610ebff97213f39393471d20df5e73fe88b53ec8408f1a",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "9a2ea24b043f07cf5039a496e13d9557e96c366c99dc0cadbff30b2c232b156af8f1802620dfda3ab70d032520a81cee576f8c4ccd79861fc89a3e03da681e88",
         "type": "Unknown"
       }
     ],
-    "InterpreterAutoSeletionRule-currentPath": {
-      "architecture": 3,
-      "path": "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python",
-      "version": {
-        "options": {
-          "loose": false,
-          "includePrerelease": false
-        },
-        "loose": false,
-        "raw": "3.6.4-final",
-        "major": 3,
-        "minor": 6,
-        "patch": 4,
-        "prerelease": [
-          "final"
-        ],
-        "build": [],
-        "version": "3.6.4-final"
-      },
-      "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-      "fileHash": "688e0f46e8369ea34990c1b31a06bad09391dc8debac8831d586dfabc0f58ce2ada1cec80f770add6b610ebff97213f39393471d20df5e73fe88b53ec8408f1a",
-      "type": "Unknown",
-      "cachedEntry": true
-    },
     "/usr/local/opt/python/bin/python3.7.interpreter.Details.v7": {
       "data": {
         "fileHash": "5dd37c6b8fa3fea6eb4c6dff1e0afe91f317587e27b77d2ac84bf9ea2e407408f8248e27486f6e6e1bf821cf43c2e7adb31fdf4d51ad65cb49c5111adf0e2ce5",
@@ -705,9 +606,9 @@
           "version": "3.8.2-final"
         },
         "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
-        "fileHash": "a19f140e99deffe3fcd9f9b6fa677522a31ddaa167cfd8d14b5ecc786f03f26d874b73610f142f74cc4d92f44455b907b049ab5a54c2b8ae67a5e107cff9ffca"
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2"
       },
-      "expiry": 1607504510411
+      "expiry": 1618376380275
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
       {
@@ -719,18 +620,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "9bdcd8a47d1ee8f5134f58109b9be22b4de3afc642742744d8ed67adacd3f285cadb1a5e1f656a7f294675063a119ebc49ba1267f2e4aa4f2889ff7eee2955c5",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "b2bfa34f93ee1ca16fc617efcfc72759d2fe625d5dcfc7ee05dc2b79ac1d76f8852483a3f06a0eb067aedecd803f530fc6db5001971e8c01c79f77472a0d1db4",
         "type": "Unknown"
       },
       {
@@ -742,179 +643,41 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
-          "major": 3,
-          "minor": 6,
-          "patch": 4,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.6.4-final"
-        },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "0246c3a0cc6bd9c4266da13b1f814408b1d67fb4eaeb74a36b1195f16ca97bfed7b94c6a54378a31cd8067474d34484f69119069f67ac2aed877a2632366d6fd",
-        "type": "Unknown"
-      },
-      {
-        "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/shims/python3.6",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.6.4-final",
-          "major": 3,
-          "minor": 6,
-          "patch": 4,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.6.4-final"
-        },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "a3445224359c8af94d6010530d2c8eae2e8a34092cd012bae773e445083442d7ef23f4136843f83d319ee6e0798dfc98f8222db6802a4dc48fad817bd3ef2104",
-        "type": "Unknown"
-      },
-      {
-        "architecture": 3,
-        "path": "/usr/local/bin/python3",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.8.6-final",
+          "raw": "3.8.7-final",
           "major": 3,
           "minor": 8,
-          "patch": 6,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.6-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-        "fileHash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "6a1fdcd1122d1209ac1226dcc0da6328ac84beccebaddd50ef624d383a1f507f307ea16004b44e48605908b3c52779017393cc5078322de4ef8eaa3511b5e484",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/usr/local/bin/python3.8",
+        "path": "/Users/ujinyoung/.pyenv/shims/python3.8",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.8.6-final",
+          "raw": "3.8.7-final",
           "major": 3,
           "minor": 8,
-          "patch": 6,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.6-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-        "fileHash": "3871f9025d407316dab1bcd521db776668801a980740b8b2f8bdbf2e6e50525cb3d12de187e0102cbe39bb1a892d0881e126b2828f3ee83dbcfce62d293fd6f5",
-        "type": "Unknown"
-      },
-      {
-        "architecture": 3,
-        "path": "/usr/bin/python",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "2.7.16-final",
-          "major": 2,
-          "minor": 7,
-          "patch": 16,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "2.7.16-final"
-        },
-        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "eac0471206fec8e0c2b021ae1be130351d8b761fc45854675dfb732719e562accf0b4c482a9e9ccb14305a3a4d525a5e3a2696c558a01754c16937d1704465d4",
-        "type": "Unknown"
-      },
-      {
-        "architecture": 3,
-        "path": "/usr/bin/python2",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "2.7.16-final",
-          "major": 2,
-          "minor": 7,
-          "patch": 16,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "2.7.16-final"
-        },
-        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "32155ca5edb3a60357185ab7b7d3b4191e4c6856fd20c2a65b74845f4a588ed4f9a8dd461fdbe2e0f26b75105be8d430fda6a3b7344172f0733bbb9d1ab175f1",
-        "type": "Unknown"
-      },
-      {
-        "architecture": 3,
-        "path": "/usr/bin/python2.7",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "2.7.16-final",
-          "major": 2,
-          "minor": 7,
-          "patch": 16,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "2.7.16-final"
-        },
-        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "55d1e13184e54da406989a11e499fcb95768d4f943c3e27ffd2cec7611f919412fd07a69d9f6a1f78a65a8db48e16cf9d73ade5743b63178ce9a38c3b446a453",
-        "type": "Unknown"
-      },
-      {
-        "architecture": 3,
-        "path": "/usr/bin/python3",
-        "version": {
-          "options": {
-            "loose": false,
-            "includePrerelease": false
-          },
-          "loose": false,
-          "raw": "3.8.2-final",
-          "major": 3,
-          "minor": 8,
-          "patch": 2,
-          "prerelease": [
-            "final"
-          ],
-          "build": [],
-          "version": "3.8.2-final"
-        },
-        "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
-        "fileHash": "a19f140e99deffe3fcd9f9b6fa677522a31ddaa167cfd8d14b5ecc786f03f26d874b73610f142f74cc4d92f44455b907b049ab5a54c2b8ae67a5e107cff9ffca",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "b3b0e2eff5f0010688b8ed24a6e4b575a3c601cfeab5cd4b9b97ede4625843aaba9f58000fa8bebfb2691c3493cafc7e894a2463449c330a5a46429eb5704972",
         "type": "Unknown"
       },
       {
@@ -926,18 +689,18 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "9bdcd8a47d1ee8f5134f58109b9be22b4de3afc642742744d8ed67adacd3f285cadb1a5e1f656a7f294675063a119ebc49ba1267f2e4aa4f2889ff7eee2955c5",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "b2bfa34f93ee1ca16fc617efcfc72759d2fe625d5dcfc7ee05dc2b79ac1d76f8852483a3f06a0eb067aedecd803f530fc6db5001971e8c01c79f77472a0d1db4",
         "type": "Unknown"
       },
       {
@@ -949,41 +712,41 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "0246c3a0cc6bd9c4266da13b1f814408b1d67fb4eaeb74a36b1195f16ca97bfed7b94c6a54378a31cd8067474d34484f69119069f67ac2aed877a2632366d6fd",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "6a1fdcd1122d1209ac1226dcc0da6328ac84beccebaddd50ef624d383a1f507f307ea16004b44e48605908b3c52779017393cc5078322de4ef8eaa3511b5e484",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/ujinyoung/.pyenv/shims/python3.6",
+        "path": "/Users/ujinyoung/.pyenv/shims/python3.8",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "a3445224359c8af94d6010530d2c8eae2e8a34092cd012bae773e445083442d7ef23f4136843f83d319ee6e0798dfc98f8222db6802a4dc48fad817bd3ef2104",
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "b3b0e2eff5f0010688b8ed24a6e4b575a3c601cfeab5cd4b9b97ede4625843aaba9f58000fa8bebfb2691c3493cafc7e894a2463449c330a5a46429eb5704972",
         "type": "Unknown"
       },
       {
@@ -995,41 +758,41 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.8.6-final",
+          "raw": "3.9.4-final",
           "major": 3,
-          "minor": 8,
-          "patch": 6,
+          "minor": 9,
+          "patch": 4,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.6-final"
+          "version": "3.9.4-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-        "fileHash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065",
+        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/usr/local/bin/python3.8",
+        "path": "/usr/local/bin/python3.9",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.8.6-final",
+          "raw": "3.9.4-final",
           "major": 3,
-          "minor": 8,
-          "patch": 6,
+          "minor": 9,
+          "patch": 4,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.6-final"
+          "version": "3.9.4-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-        "fileHash": "3871f9025d407316dab1bcd521db776668801a980740b8b2f8bdbf2e6e50525cb3d12de187e0102cbe39bb1a892d0881e126b2828f3ee83dbcfce62d293fd6f5",
+        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "9a43b9dd3ac9515dc598b39fe01d81726bb55d1a56edaee5387871192326f00044a1f0c5f21d6398b225c19130a05579e965a3344a28674b7ca0d1b610404427",
         "type": "Unknown"
       },
       {
@@ -1052,7 +815,7 @@
           "version": "2.7.16-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "eac0471206fec8e0c2b021ae1be130351d8b761fc45854675dfb732719e562accf0b4c482a9e9ccb14305a3a4d525a5e3a2696c558a01754c16937d1704465d4",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
         "type": "Unknown"
       },
       {
@@ -1075,7 +838,7 @@
           "version": "2.7.16-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "32155ca5edb3a60357185ab7b7d3b4191e4c6856fd20c2a65b74845f4a588ed4f9a8dd461fdbe2e0f26b75105be8d430fda6a3b7344172f0733bbb9d1ab175f1",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
         "type": "Unknown"
       },
       {
@@ -1098,7 +861,7 @@
           "version": "2.7.16-final"
         },
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "55d1e13184e54da406989a11e499fcb95768d4f943c3e27ffd2cec7611f919412fd07a69d9f6a1f78a65a8db48e16cf9d73ade5743b63178ce9a38c3b446a453",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
         "type": "Unknown"
       },
       {
@@ -1121,7 +884,260 @@
           "version": "3.8.2-final"
         },
         "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
-        "fileHash": "a19f140e99deffe3fcd9f9b6fa677522a31ddaa167cfd8d14b5ecc786f03f26d874b73610f142f74cc4d92f44455b907b049ab5a54c2b8ae67a5e107cff9ffca",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/local/opt/python@3.8/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.9-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.9-final"
+        },
+        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.9/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "4b0a2cb4c32c4da352e89729bcff54d75d2905e172d0c7301862203c791c6e6f5d5d34e79c47c39c145eecd6def086c3a9ca5daec9b50f9299638b7641589d56",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/local/opt/python@3.8/bin/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.9-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.9-final"
+        },
+        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.9/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "5b976e58519c3928d4d7c83babb6d6269ae0466f1975f6be77efc5c5ffe1d36980530b5930c358ea5ebbd09e05f0a2a75ac613d3207b6d432bf4f06729e1a08c",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/shims/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.7-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.7-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "b2bfa34f93ee1ca16fc617efcfc72759d2fe625d5dcfc7ee05dc2b79ac1d76f8852483a3f06a0eb067aedecd803f530fc6db5001971e8c01c79f77472a0d1db4",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/shims/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.7-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.7-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "6a1fdcd1122d1209ac1226dcc0da6328ac84beccebaddd50ef624d383a1f507f307ea16004b44e48605908b3c52779017393cc5078322de4ef8eaa3511b5e484",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/shims/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.7-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.7-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "b3b0e2eff5f0010688b8ed24a6e4b575a3c601cfeab5cd4b9b97ede4625843aaba9f58000fa8bebfb2691c3493cafc7e894a2463449c330a5a46429eb5704972",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/local/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.9.4-final",
+          "major": 3,
+          "minor": 9,
+          "patch": 4,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.9.4-final"
+        },
+        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/local/bin/python3.9",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.9.4-final",
+          "major": 3,
+          "minor": 9,
+          "patch": 4,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.9.4-final"
+        },
+        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "9a43b9dd3ac9515dc598b39fe01d81726bb55d1a56edaee5387871192326f00044a1f0c5f21d6398b225c19130a05579e965a3344a28674b7ca0d1b610404427",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.16-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 16,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.16-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.16-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 16,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.16-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.16-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 16,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.16-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.2-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 2,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.2-final"
+        },
+        "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
         "type": "Unknown"
       }
     ],
@@ -1129,34 +1145,34 @@
     "/usr/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
-        "hash": "eac0471206fec8e0c2b021ae1be130351d8b761fc45854675dfb732719e562accf0b4c482a9e9ccb14305a3a4d525a5e3a2696c558a01754c16937d1704465d4-affabcd6e42fa4a070f38c52a7b1b891"
+        "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-f5b651b9c4b75532b11ae83303c43d14"
       },
-      "expiry": 1602920912962
+      "expiry": 1617857978379
     },
     "/usr/local/bin/python3.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 3.8.6 64-bit ('local': virtualenv)",
-        "hash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065-9f9809c3ba9084394b74b91490aa9b6a"
+        "displayName": "Python 3.9.4 64-bit ('local': virtualenv)",
+        "hash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13-b707a1c56ec6fb25ff5c56d427723cd1"
       },
-      "expiry": 1607504508138
+      "expiry": 1618376606915
     },
     "/usr/bin/python3.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 3.7.3 64-bit",
-        "hash": "a19f140e99deffe3fcd9f9b6fa677522a31ddaa167cfd8d14b5ecc786f03f26d874b73610f142f74cc4d92f44455b907b049ab5a54c2b8ae67a5e107cff9ffca-bad2bfefa2cc5896bc3f90ee31046392"
+        "displayName": "Python 3.8.2 64-bit",
+        "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-b94ba3f7e631b2cac10e62bf95a60276"
       },
-      "expiry": 1602920912969
+      "expiry": 1617857978383
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
-        "hash": "bc30685281bb225ccd15872be5a7d659c18f265e9fcbd8e2bd861cf59c91c08e809f70f68391822449082f7f5c93553823a8db9131cc4a5c4e76d37aa5671caa-a6d474e1c696bc21f490f8b2494098be"
+        "hash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2-a9fb100b1ab04c53a774363838d4885e"
       },
-      "expiry": 1602920913506
+      "expiry": 1617857888134
     },
     "/usr/bin/python.interpreter.Details.v7": {
       "data": {
-        "fileHash": "eac0471206fec8e0c2b021ae1be130351d8b761fc45854675dfb732719e562accf0b4c482a9e9ccb14305a3a4d525a5e3a2696c558a01754c16937d1704465d4",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
         "info": {
           "architecture": 3,
           "path": "/usr/bin/python",
@@ -1177,16 +1193,16 @@
             "version": "2.7.16-final"
           },
           "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-          "fileHash": "eac0471206fec8e0c2b021ae1be130351d8b761fc45854675dfb732719e562accf0b4c482a9e9ccb14305a3a4d525a5e3a2696c558a01754c16937d1704465d4",
+          "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
           "type": "Unknown",
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-      "expiry": 1602920913119
+      "expiry": 1617857978434
     },
     "/usr/local/bin/python3.interpreter.Details.v7": {
       "data": {
-        "fileHash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065",
+        "fileHash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13",
         "info": {
           "architecture": 3,
           "path": "/usr/local/bin/python3",
@@ -1196,29 +1212,29 @@
               "includePrerelease": false
             },
             "loose": false,
-            "raw": "3.8.6-final",
+            "raw": "3.9.4-final",
             "major": 3,
-            "minor": 8,
-            "patch": 6,
+            "minor": 9,
+            "patch": 4,
             "prerelease": [
               "final"
             ],
             "build": [],
-            "version": "3.8.6-final"
+            "version": "3.9.4-final"
           },
-          "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-          "fileHash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065",
+          "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+          "fileHash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13",
           "type": "Unknown",
           "cachedEntry": true,
-          "displayName": "Python 3.8.6 64-bit",
+          "displayName": "Python 3.9.4 64-bit",
           "__store": true
         }
       },
-      "expiry": 1607504508070
+      "expiry": 1618376606901
     },
     "/usr/bin/python3.interpreter.Details.v7": {
       "data": {
-        "fileHash": "a19f140e99deffe3fcd9f9b6fa677522a31ddaa167cfd8d14b5ecc786f03f26d874b73610f142f74cc4d92f44455b907b049ab5a54c2b8ae67a5e107cff9ffca",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
         "info": {
           "architecture": 3,
           "path": "/usr/bin/python3",
@@ -1228,27 +1244,27 @@
               "includePrerelease": false
             },
             "loose": false,
-            "raw": "3.7.3-final",
+            "raw": "3.8.2-final",
             "major": 3,
-            "minor": 7,
-            "patch": 3,
+            "minor": 8,
+            "patch": 2,
             "prerelease": [
               "final"
             ],
             "build": [],
-            "version": "3.7.3-final"
+            "version": "3.8.2-final"
           },
-          "sysPrefix": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7",
-          "fileHash": "a19f140e99deffe3fcd9f9b6fa677522a31ddaa167cfd8d14b5ecc786f03f26d874b73610f142f74cc4d92f44455b907b049ab5a54c2b8ae67a5e107cff9ffca",
+          "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
+          "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
           "type": "Unknown",
-          "displayName": "Python 3.7.3 64-bit"
+          "displayName": "Python 3.8.2 64-bit"
         }
       },
-      "expiry": 1602920913136
+      "expiry": 1617857978444
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.Details.v7": {
       "data": {
-        "fileHash": "bc30685281bb225ccd15872be5a7d659c18f265e9fcbd8e2bd861cf59c91c08e809f70f68391822449082f7f5c93553823a8db9131cc4a5c4e76d37aa5671caa",
+        "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
         "info": {
           "architecture": 3,
           "path": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python",
@@ -1269,12 +1285,12 @@
             "version": "2.7.16-final"
           },
           "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-          "fileHash": "bc30685281bb225ccd15872be5a7d659c18f265e9fcbd8e2bd861cf59c91c08e809f70f68391822449082f7f5c93553823a8db9131cc4a5c4e76d37aa5671caa",
+          "fileHash": "fe779c276a2cbfead74d365db0ac2cbfcea62106a4f0a4f6c9ded35d45b630e271af9461b8083f72f5c25478015c8409ecfa63d05b8eac8c5d1442777dd260d2",
           "type": "Unknown",
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-      "expiry": 1602920913590
+      "expiry": 1617857888181
     },
     "ProposeLSBanner": false,
     "/Users/ujinyoung/.pyenv/shims/python3.v3": {
@@ -1287,20 +1303,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "0246c3a0cc6bd9c4266da13b1f814408b1d67fb4eaeb74a36b1195f16ca97bfed7b94c6a54378a31cd8067474d34484f69119069f67ac2aed877a2632366d6fd"
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "6a1fdcd1122d1209ac1226dcc0da6328ac84beccebaddd50ef624d383a1f507f307ea16004b44e48605908b3c52779017393cc5078322de4ef8eaa3511b5e484"
       },
-      "expiry": 1607504508052
+      "expiry": 1618376363252
     },
     "/Users/ujinyoung/.pyenv/shims/python3.7.v3": {
       "data": {
@@ -1337,20 +1353,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.4-final",
+          "raw": "3.8.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 4,
+          "minor": 8,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.4-final"
+          "version": "3.8.7-final"
         },
-        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-        "fileHash": "9bdcd8a47d1ee8f5134f58109b9be22b4de3afc642742744d8ed67adacd3f285cadb1a5e1f656a7f294675063a119ebc49ba1267f2e4aa4f2889ff7eee2955c5"
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "b2bfa34f93ee1ca16fc617efcfc72759d2fe625d5dcfc7ee05dc2b79ac1d76f8852483a3f06a0eb067aedecd803f530fc6db5001971e8c01c79f77472a0d1db4"
       },
-      "expiry": 1607504508055
+      "expiry": 1618376363256
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python.v3": {
       "data": {
@@ -1375,7 +1391,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1",
         "fileHash": "586170e5ed77c577e6a005a4ad1959466f18cb2ba0377ede91460eaac0255d89e2c810a20f68bcc461f323d14689e2ae8f77133f1fc372b8d27799501fc91252"
       },
-      "expiry": 1607504508156
+      "expiry": 1609314086439
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python3.7.v3": {
       "data": {
@@ -1400,7 +1416,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1",
         "fileHash": "ead31c37ffeb1188faf2ee22e93ca2933b9443c3cff7cb6ec27732b496116a6aebfd1452ef87ab6af980884b7df790085f4ac43dbb8b3aadd14ab119082b7226"
       },
-      "expiry": 1607504508141
+      "expiry": 1609314086408
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python3.v3": {
       "data": {
@@ -1425,7 +1441,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1",
         "fileHash": "2cce40362db7e43ce588bf34fad1a8de96cedee3bb06f4ddf7a0a82aab83e22d39e672be0b5cff096d28d540e25967f9b4e598bdebac1b67b2f0058f946ee4fe"
       },
-      "expiry": 1607504508145
+      "expiry": 1609314086403
     },
     "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python.v3": {
       "data": {
@@ -1450,7 +1466,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
         "fileHash": "688e0f46e8369ea34990c1b31a06bad09391dc8debac8831d586dfabc0f58ce2ada1cec80f770add6b610ebff97213f39393471d20df5e73fe88b53ec8408f1a"
       },
-      "expiry": 1607504508112
+      "expiry": 1609314086331
     },
     "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python3.v3": {
       "data": {
@@ -1475,7 +1491,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
         "fileHash": "6f24de96b8216a7b19a03a44943277f9e8cf082c573d88cd37f0d09ec2f62ffb673c06a8bc8de8b8bd08d5f24cea6c1ed48e0a183848a14f21e4385422ff9b9f"
       },
-      "expiry": 1607504508120
+      "expiry": 1609314086336
     },
     "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python3.6.v3": {
       "data": {
@@ -1500,7 +1516,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
         "fileHash": "b4ebfe701421e121c9a3ff290fbc158b55c32c86d62610c2919b751e2f78e602357ea1864c8666bd191123773f938c567cd80a3cde36daa107c1e0744444d770"
       },
-      "expiry": 1607504508114
+      "expiry": 1609314086341
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel/bin/python.v3": {
       "data": {
@@ -1512,20 +1528,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.7.7-final",
+          "raw": "3.7.9-final",
           "major": 3,
           "minor": 7,
-          "patch": 7,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.7.7-final"
+          "version": "3.7.9-final"
         },
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel",
-        "fileHash": "29c467065b162ff41d929e7c4474617297ce1f8c014eaaffdb7dc8c077b498c7c0c235141c33eb4b8c31361c7d3ad06d104136c346b2ccac176fd069d6e5b081"
+        "fileHash": "3e174a86b6b89f863c92c2c36592c78f6ef29ab5d00b40686d880984951f803e1ec2ceb03a9e5af5349b7de76b83eccf1ab3a16a2ac12bd6b3bb55c004ba5ac0"
       },
-      "expiry": 1607504508229
+      "expiry": 1609314086519
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel-t2/bin/python.v3": {
       "data": {
@@ -1575,7 +1591,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nengo-rl",
         "fileHash": "1b810b4c5a6b1674ca2f9542c86c6f7fd7ffba54ad068217092980feee8b3013262fcdd01612fc45bf6da9338c4f2b7f86fbcb5629696eea325e0f54be40c5a3"
       },
-      "expiry": 1607504508220
+      "expiry": 1609314086498
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/chatbot/bin/python.v3": {
       "data": {
@@ -1600,7 +1616,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/chatbot",
         "fileHash": "8dfd50f3bde65346edc338366a99859d66aca9a25eabc3bf5daafa253362c423e4c658448288a40d516e432d5e332a4d6f519c07fe96c60f0b6b3a4d928f51c3"
       },
-      "expiry": 1607504508244
+      "expiry": 1609314086504
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel/bin/python3.v3": {
       "data": {
@@ -1676,74 +1692,49 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
         "fileHash": "a3445224359c8af94d6010530d2c8eae2e8a34092cd012bae773e445083442d7ef23f4136843f83d319ee6e0798dfc98f8222db6802a4dc48fad817bd3ef2104"
       },
-      "expiry": 1607504508050
+      "expiry": 1609314086197
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/chatbot/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.6.10 64-bit ('chatbot': conda)",
         "hash": "8dfd50f3bde65346edc338366a99859d66aca9a25eabc3bf5daafa253362c423e4c658448288a40d516e432d5e332a4d6f519c07fe96c60f0b6b3a4d928f51c3-e8c8ea5724b64e1ba6c474a3d0ec479f"
       },
-      "expiry": 1598334657449
+      "expiry": 1609343441991
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.3 64-bit ('anaconda3-5.3.1': conda)",
         "hash": "586170e5ed77c577e6a005a4ad1959466f18cb2ba0377ede91460eaac0255d89e2c810a20f68bcc461f323d14689e2ae8f77133f1fc372b8d27799501fc91252-027da0beec3963f7cdc14ba484e19a15"
       },
-      "expiry": 1598334657464
+      "expiry": 1609343441994
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nengo-rl/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.5 64-bit ('nengo-rl': conda)",
         "hash": "1b810b4c5a6b1674ca2f9542c86c6f7fd7ffba54ad068217092980feee8b3013262fcdd01612fc45bf6da9338c4f2b7f86fbcb5629696eea325e0f54be40c5a3-b0acee1752ae6808aab665745fc92139"
       },
-      "expiry": 1598334657457
+      "expiry": 1609343442001
     },
     "/Users/ujinyoung/.pyenv/shims/python.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 3.6.4 64-bit",
-        "hash": "986bb961beac1ea3cccba92ee2828e62a1c674f8d838ce3e97c7d58a7571fd092895e3bd3a49aebad3b7f8e73b168f6a76caceec363037914b5e9ed239cecf7d-d0dfc1b8123d04822e1efb43e1f4e90f"
+        "displayName": "Python 3.8.7 64-bit",
+        "hash": "99d9c4b56c16301408867edf7f757f24e31dfecfd160daaa6df1301ce0c457d3006eeb36cd6401ba2a3e64144ebdbc09913c770436d7d7cdc228e8cb2d47ee9c-7b22f39bde2618c134cb56a0ed648f14"
       },
-      "expiry": 1602920912949
+      "expiry": 1617857978374
     },
     "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.6.4 64-bit ('3.6.4': pyenv)",
         "hash": "688e0f46e8369ea34990c1b31a06bad09391dc8debac8831d586dfabc0f58ce2ada1cec80f770add6b610ebff97213f39393471d20df5e73fe88b53ec8408f1a-3ba3ce03cc80edf2008144e1a46a23ee"
       },
-      "expiry": 1602920913457
+      "expiry": 1609343441832
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel/bin/python.interpreter.displayName.v7": {
       "data": {
-        "displayName": "Python 3.7.7 64-bit ('aiffel': conda)",
-        "hash": "29c467065b162ff41d929e7c4474617297ce1f8c014eaaffdb7dc8c077b498c7c0c235141c33eb4b8c31361c7d3ad06d104136c346b2ccac176fd069d6e5b081-8e21cf9d940e420de0866b5cad036233"
+        "displayName": "Python 3.7.9 64-bit ('aiffel': conda)",
+        "hash": "3e174a86b6b89f863c92c2c36592c78f6ef29ab5d00b40686d880984951f803e1ec2ceb03a9e5af5349b7de76b83eccf1ab3a16a2ac12bd6b3bb55c004ba5ac0-a1590199211097c1135e9e1b2b736b91"
       },
-      "expiry": 1598334657470
-    },
-    "InterpreterAutoSeletionRule-system": {
-      "architecture": 3,
-      "path": "/usr/local/bin/python3",
-      "version": {
-        "options": {
-          "loose": false,
-          "includePrerelease": false
-        },
-        "loose": false,
-        "raw": "3.8.6-final",
-        "major": 3,
-        "minor": 8,
-        "patch": 6,
-        "prerelease": [
-          "final"
-        ],
-        "build": [],
-        "version": "3.8.6-final"
-      },
-      "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-      "fileHash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065",
-      "type": "Unknown",
-      "cachedEntry": true,
-      "displayName": "Python 3.8.6 64-bit"
+      "expiry": 1609343441998
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/chatbot/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1776,7 +1767,7 @@
           "displayName": "Python 3.6.10 64-bit ('chatbot': conda)"
         }
       },
-      "expiry": 1598334657607
+      "expiry": 1609343442033
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1809,7 +1800,7 @@
           "displayName": "Python 3.7.3 64-bit ('anaconda3-5.3.1': conda)"
         }
       },
-      "expiry": 1598334657645
+      "expiry": 1609343442039
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nengo-rl/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1842,11 +1833,11 @@
           "displayName": "Python 3.7.5 64-bit ('nengo-rl': conda)"
         }
       },
-      "expiry": 1598334657626
+      "expiry": 1609343442052
     },
     "/Users/ujinyoung/.pyenv/shims/python.interpreter.Details.v7": {
       "data": {
-        "fileHash": "986bb961beac1ea3cccba92ee2828e62a1c674f8d838ce3e97c7d58a7571fd092895e3bd3a49aebad3b7f8e73b168f6a76caceec363037914b5e9ed239cecf7d",
+        "fileHash": "99d9c4b56c16301408867edf7f757f24e31dfecfd160daaa6df1301ce0c457d3006eeb36cd6401ba2a3e64144ebdbc09913c770436d7d7cdc228e8cb2d47ee9c",
         "info": {
           "architecture": 3,
           "path": "/Users/ujinyoung/.pyenv/shims/python",
@@ -1856,23 +1847,23 @@
               "includePrerelease": false
             },
             "loose": false,
-            "raw": "3.6.4-final",
+            "raw": "3.8.7-final",
             "major": 3,
-            "minor": 6,
-            "patch": 4,
+            "minor": 8,
+            "patch": 7,
             "prerelease": [
               "final"
             ],
             "build": [],
-            "version": "3.6.4-final"
+            "version": "3.8.7-final"
           },
-          "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.6.4",
-          "fileHash": "986bb961beac1ea3cccba92ee2828e62a1c674f8d838ce3e97c7d58a7571fd092895e3bd3a49aebad3b7f8e73b168f6a76caceec363037914b5e9ed239cecf7d",
+          "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+          "fileHash": "99d9c4b56c16301408867edf7f757f24e31dfecfd160daaa6df1301ce0c457d3006eeb36cd6401ba2a3e64144ebdbc09913c770436d7d7cdc228e8cb2d47ee9c",
           "type": "Unknown",
-          "displayName": "Python 3.6.4 64-bit"
+          "displayName": "Python 3.8.7 64-bit"
         }
       },
-      "expiry": 1602920913101
+      "expiry": 1617857978424
     },
     "/Users/ujinyoung/.pyenv/versions/3.6.4/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1903,11 +1894,11 @@
           "displayName": "Python 3.6.4 64-bit ('3.6.4': pyenv)"
         }
       },
-      "expiry": 1602920913574
+      "expiry": 1609343441867
     },
     "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel/bin/python.interpreter.Details.v7": {
       "data": {
-        "fileHash": "29c467065b162ff41d929e7c4474617297ce1f8c014eaaffdb7dc8c077b498c7c0c235141c33eb4b8c31361c7d3ad06d104136c346b2ccac176fd069d6e5b081",
+        "fileHash": "3e174a86b6b89f863c92c2c36592c78f6ef29ab5d00b40686d880984951f803e1ec2ceb03a9e5af5349b7de76b83eccf1ab3a16a2ac12bd6b3bb55c004ba5ac0",
         "info": {
           "architecture": 3,
           "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel/bin/python",
@@ -1917,76 +1908,26 @@
               "includePrerelease": false
             },
             "loose": false,
-            "raw": "3.7.7-final",
+            "raw": "3.7.9-final",
             "major": 3,
             "minor": 7,
-            "patch": 7,
+            "patch": 9,
             "prerelease": [
               "final"
             ],
             "build": [],
-            "version": "3.7.7-final"
+            "version": "3.7.9-final"
           },
           "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel",
-          "fileHash": "29c467065b162ff41d929e7c4474617297ce1f8c014eaaffdb7dc8c077b498c7c0c235141c33eb4b8c31361c7d3ad06d104136c346b2ccac176fd069d6e5b081",
+          "fileHash": "3e174a86b6b89f863c92c2c36592c78f6ef29ab5d00b40686d880984951f803e1ec2ceb03a9e5af5349b7de76b83eccf1ab3a16a2ac12bd6b3bb55c004ba5ac0",
           "companyDisplayName": "Anaconda, Inc.",
           "type": "Conda",
           "envPath": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/aiffel",
           "envName": "aiffel",
-          "displayName": "Python 3.7.7 64-bit ('aiffel': conda)"
+          "displayName": "Python 3.7.9 64-bit ('aiffel': conda)"
         }
       },
-      "expiry": 1598334657663
-    },
-    "InterpreterAutoSeletionRule-cachedInterpreters": {
-      "architecture": 3,
-      "path": "/usr/local/bin/python3",
-      "version": {
-        "options": {
-          "loose": false,
-          "includePrerelease": false
-        },
-        "loose": false,
-        "raw": "3.8.6-final",
-        "major": 3,
-        "minor": 8,
-        "patch": 6,
-        "prerelease": [
-          "final"
-        ],
-        "build": [],
-        "version": "3.8.6-final"
-      },
-      "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-      "fileHash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065",
-      "type": "Unknown",
-      "cachedEntry": true,
-      "displayName": "Python 3.8.6 64-bit"
-    },
-    "preferredGlobalPyInterpreter": {
-      "architecture": 3,
-      "path": "/usr/local/bin/python3",
-      "version": {
-        "options": {
-          "loose": false,
-          "includePrerelease": false
-        },
-        "loose": false,
-        "raw": "3.8.6-final",
-        "major": 3,
-        "minor": 8,
-        "patch": 6,
-        "prerelease": [
-          "final"
-        ],
-        "build": [],
-        "version": "3.8.6-final"
-      },
-      "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
-      "fileHash": "2551d29b085a766b2d9cd57d70ef88620419d7032f353cab59c51788c67ba83943e36ceed4bd769a6e64687b0c5fa663d92862b3a252ee8a555dfb291bf46065",
-      "type": "Unknown",
-      "cachedEntry": true,
-      "displayName": "Python 3.8.6 64-bit"
+      "expiry": 1609343442046
     },
     "/Users/ujinyoung/.pyenv/versions/selenium/bin/python3.v3": {
       "data": {
@@ -2011,7 +1952,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/selenium",
         "fileHash": "5d266c201b9d7ad2640a2233bb50f6f66af8e80c92db2c1ce7979ad9207a152c774accc3c75b7f8ec6836dbc0d05ce0d03ffb75f48fe0657250670d0f77298a0"
       },
-      "expiry": 1607504508097
+      "expiry": 1609314086262
     },
     "/Users/ujinyoung/.pyenv/versions/selenium/bin/python.v3": {
       "data": {
@@ -2036,7 +1977,7 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/selenium",
         "fileHash": "2a77eafd9941507f16d00386531f9e43e494c7a26b2f7f38536e447a1ef85eefea655bbf3bf6ed7ae3f96d943c572a94f61425023267cdd22cba529c6051126d"
       },
-      "expiry": 1607504508100
+      "expiry": 1609314086268
     },
     "/Users/ujinyoung/.pyenv/versions/selenium/bin/python3.6.v3": {
       "data": {
@@ -2061,14 +2002,14 @@
         "sysPrefix": "/Users/ujinyoung/.pyenv/versions/selenium",
         "fileHash": "d36d76285f644e423f40d297eb7ecebded701919294bbee6b44e91f3a383ad3a606b0afc19a8b40bd2d5e41633cd48125f24ef1091c485668668ae37926909e7"
       },
-      "expiry": 1607504508096
+      "expiry": 1609314086260
     },
     "/Users/ujinyoung/.pyenv/versions/selenium/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.6.4 64-bit ('selenium': venv)",
-        "hash": "2a77eafd9941507f16d00386531f9e43e494c7a26b2f7f38536e447a1ef85eefea655bbf3bf6ed7ae3f96d943c572a94f61425023267cdd22cba529c6051126d-877908974907ef2a4a47ab729df4a2cf"
+        "hash": "2a77eafd9941507f16d00386531f9e43e494c7a26b2f7f38536e447a1ef85eefea655bbf3bf6ed7ae3f96d943c572a94f61425023267cdd22cba529c6051126d-3873253a56a9ca054eae4caefedd673f"
       },
-      "expiry": 1602920913170
+      "expiry": 1609343441836
     },
     "/Users/ujinyoung/.pyenv/versions/selenium/bin/python.interpreter.Details.v7": {
       "data": {
@@ -2099,7 +2040,7 @@
           "displayName": "Python 3.6.4 64-bit ('selenium': venv)"
         }
       },
-      "expiry": 1602920913529
+      "expiry": 1609343441875
     },
     "pylint_DisableLinterInstallPrompt": true,
     "/usr/local/bin/python3.8.v3": {
@@ -2125,7 +2066,7 @@
         "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.6/Frameworks/Python.framework/Versions/3.8",
         "fileHash": "3871f9025d407316dab1bcd521db776668801a980740b8b2f8bdbf2e6e50525cb3d12de187e0102cbe39bb1a892d0881e126b2828f3ee83dbcfce62d293fd6f5"
       },
-      "expiry": 1607504508033
+      "expiry": 1609314086155
     },
     "/usr/local/opt/python@3.8/bin/python3.8.v3": {
       "data": {
@@ -2137,20 +2078,20 @@
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.8.5-final",
+          "raw": "3.8.9-final",
           "major": 3,
           "minor": 8,
-          "patch": 5,
+          "patch": 9,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.8.5-final"
+          "version": "3.8.9-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.5/Frameworks/Python.framework/Versions/3.8",
-        "fileHash": "105750636cdcd71600e46006e939824e67697d5568de77b58e25914f9c3d5568312eabbab04f9b44cd98b02142298993028a0f4336427b71af644afa968f18a5"
+        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.9/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "5b976e58519c3928d4d7c83babb6d6269ae0466f1975f6be77efc5c5ffe1d36980530b5930c358ea5ebbd09e05f0a2a75ac613d3207b6d432bf4f06729e1a08c"
       },
-      "expiry": 1597571285316
+      "expiry": 1618376363273
     },
     "/usr/local/opt/python@3.8/bin/python3.8.interpreter.displayName.v7": {
       "data": {
@@ -2225,14 +2166,122 @@
         }
       },
       "expiry": 1597571285763
-    }
-  },
-  "coc-python|/Users/ujinyoung/selenium": {
-    "INTERPRETERS_CACHE_v3_PipEnvService:0c12209a88a3aaa7ada760753e8d0cc1": [],
-    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:0c12209a88a3aaa7ada760753e8d0cc1": [],
-    "INTERPRETERS_CACHE_v3_PipEnvService": [],
-    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
-    "autoSelectedWorkspacePythonInterpreter-/Users/ujinyoung/selenium": {
+    },
+    "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.9.1-final",
+          "major": 3,
+          "minor": 9,
+          "patch": 1,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.9.1-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp",
+        "fileHash": "335bd428e7a15da23971adad70b823d015d4e073e41248f5571b54340a26769000b6e4099c8c63940f53ff27af3d94702be4ea65ba2f80e1265bddc80e7300b5"
+      },
+      "expiry": 1609314086382
+    },
+    "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "335bd428e7a15da23971adad70b823d015d4e073e41248f5571b54340a26769000b6e4099c8c63940f53ff27af3d94702be4ea65ba2f80e1265bddc80e7300b5",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.9.1-final",
+            "major": 3,
+            "minor": 9,
+            "patch": 1,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.9.1-final"
+          },
+          "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp",
+          "fileHash": "335bd428e7a15da23971adad70b823d015d4e073e41248f5571b54340a26769000b6e4099c8c63940f53ff27af3d94702be4ea65ba2f80e1265bddc80e7300b5",
+          "companyDisplayName": "Anaconda, Inc.",
+          "type": "Conda",
+          "envPath": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp",
+          "envName": "nlp",
+          "displayName": "Python 3.9.1 64-bit ('nlp': conda)"
+        }
+      },
+      "expiry": 1609343442057
+    },
+    "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.9.1 64-bit ('nlp': conda)",
+        "hash": "335bd428e7a15da23971adad70b823d015d4e073e41248f5571b54340a26769000b6e4099c8c63940f53ff27af3d94702be4ea65ba2f80e1265bddc80e7300b5-97544e24e20a3bd7fc08ea954181df2a"
+      },
+      "expiry": 1609343442007
+    },
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.2-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 2,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.2-final"
+        },
+        "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8",
+        "fileHash": "c7217021c73bc25feb2b7639d2bb82809661839506952ac58df0b468910853dee0145e74c35dc8267b417404d90e3aa924f6bf900c112585963191299e03f4ff"
+      },
+      "expiry": 1610468274964
+    },
+    "InterpreterAutoSeletionRule-currentPath": {
+      "architecture": 3,
+      "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.8.7-final",
+        "major": 3,
+        "minor": 8,
+        "patch": 7,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.8.7-final"
+      },
+      "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+      "fileHash": "9a2ea24b043f07cf5039a496e13d9557e96c366c99dc0cadbff30b2c232b156af8f1802620dfda3ab70d032520a81cee576f8c4ccd79861fc89a3e03da681e88",
+      "type": "Unknown",
+      "cachedEntry": true
+    },
+    "InterpreterAutoSeletionRule-system": {
       "architecture": 3,
       "path": "/usr/local/bin/python3",
       "version": {
@@ -2241,21 +2290,598 @@
           "includePrerelease": false
         },
         "loose": false,
-        "raw": "3.7.7-final",
+        "raw": "3.9.4-final",
         "major": 3,
-        "minor": 7,
-        "patch": 7,
+        "minor": 9,
+        "patch": 4,
         "prerelease": [
           "final"
         ],
         "build": [],
-        "version": "3.7.7-final"
+        "version": "3.9.4-final"
       },
-      "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
-      "fileHash": "d5fd007ca58d4099ee3f2ab93560f65b0c1a22bcef86481a964d4932085922083cf455007bc9d2f0caa9e7fead791c3923f99999ec83b69fe1dff872d61b2347",
+      "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+      "fileHash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13",
       "type": "Unknown",
-      "displayName": "Python 3.7.7 64-bit"
+      "cachedEntry": true,
+      "displayName": "Python 3.9.4 64-bit"
     },
+    "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.7-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.7-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "d4a7a83f66a4ffd08a0ca529886bf4e2a723db4c405f654f8c45bb3869d4c66a0b80b75e39f7a4db921e06bf170bca7d5f4078bfe6a3e6331b532d8b269a4d76"
+      },
+      "expiry": 1618376363334
+    },
+    "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.7-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.7-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "9a2ea24b043f07cf5039a496e13d9557e96c366c99dc0cadbff30b2c232b156af8f1802620dfda3ab70d032520a81cee576f8c4ccd79861fc89a3e03da681e88"
+      },
+      "expiry": 1618376363331
+    },
+    "/Users/ujinyoung/.pyenv/shims/python3.8.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/shims/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.7-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.7-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "b3b0e2eff5f0010688b8ed24a6e4b575a3c601cfeab5cd4b9b97ede4625843aaba9f58000fa8bebfb2691c3493cafc7e894a2463449c330a5a46429eb5704972"
+      },
+      "expiry": 1618376363277
+    },
+    "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python3.8.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.7-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.7-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+        "fileHash": "084be457d45ddcd386782f24216e7d591bbf1e7f85f22489b93fef0b802d080f9500998d9f8bad89929d1cfc942849de06e6dcecdd464085fb097e237f71a4e6"
+      },
+      "expiry": 1618376363233
+    },
+    "/usr/local/opt/python@3.8/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/local/opt/python@3.8/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.9-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.9-final"
+        },
+        "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.9/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "4b0a2cb4c32c4da352e89729bcff54d75d2905e172d0c7301862203c791c6e6f5d5d34e79c47c39c145eecd6def086c3a9ca5daec9b50f9299638b7641589d56"
+      },
+      "expiry": 1618376363306
+    },
+    "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.9-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.9-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/aiffel",
+        "fileHash": "3e535c5570ff7d3bf2f7d9e9bd7d3a25a10da0dfec998c240b76eebac0110fa44aa2b9c44780dfb88cb31175c33d2e80491cd2c44c1f73fda1f7518d10847255"
+      },
+      "expiry": 1618376363349
+    },
+    "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.9-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.9-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/aiffel",
+        "fileHash": "ae977fb9806410e2e2e38a60787210027cbd14e944f50fba1e1177b4ad26f07f993bbbae5466316bd990b134fa8cf40e8d793fb2be6d190f98a1c2187cb682d9"
+      },
+      "expiry": 1618376363352
+    },
+    "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.9-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.9-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/aiffel",
+        "fileHash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700"
+      },
+      "expiry": 1618376363346
+    },
+    "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.9-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.9-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel",
+        "fileHash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700"
+      },
+      "expiry": 1618376377438
+    },
+    "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.4-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 4,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.4-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+        "fileHash": "614244bfd346304f45ceb7b4421a6941601b23c53d2a500df9a82e53d7a7bfa78b051cee44bc90e863e483e02919fb097bb00def1785598d770d4b02bd6fefac"
+      },
+      "expiry": 1618376363343
+    },
+    "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.4-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 4,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.4-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+        "fileHash": "db5db41b701c98a83c8b07a8d47066930d1973f2a7b8da18b22446d35aa247ccfff8675eef6daee398aa144be920ec5d0d0e5b1075f4b69002ca68b7e068c26d"
+      },
+      "expiry": 1618376363340
+    },
+    "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.4-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 4,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.4-final"
+        },
+        "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+        "fileHash": "6dd41cf4bf5cecfb83b06dd0987874cd4ab1acc3e559fa1f43bd53ea9d0b2c44f081c1e671d4f2f7e25df3079ff6fd18428ce0a0981b4d737b93b68df617100f"
+      },
+      "expiry": 1618376363337
+    },
+    "InterpreterAutoSeletionRule-cachedInterpreters": {
+      "architecture": 3,
+      "path": "/usr/local/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.9.4-final",
+        "major": 3,
+        "minor": 9,
+        "patch": 4,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.9.4-final"
+      },
+      "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+      "fileHash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13",
+      "type": "Unknown",
+      "cachedEntry": true,
+      "displayName": "Python 3.9.4 64-bit"
+    },
+    "preferredGlobalPyInterpreter": {
+      "architecture": 3,
+      "path": "/usr/local/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.9.4-final",
+        "major": 3,
+        "minor": 9,
+        "patch": 4,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.9.4-final"
+      },
+      "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+      "fileHash": "00b5769db6a225a3fc53fefc12bc5c146d36787aef023ba536619c98fd7252cb4de6a60ff3cf578807127d26be8f55a30970b08ec179b1e4936c89ae50848c13",
+      "type": "Unknown",
+      "cachedEntry": true,
+      "displayName": "Python 3.9.4 64-bit"
+    },
+    "/usr/local/opt/python@3.8/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "4b0a2cb4c32c4da352e89729bcff54d75d2905e172d0c7301862203c791c6e6f5d5d34e79c47c39c145eecd6def086c3a9ca5daec9b50f9299638b7641589d56",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/local/opt/python@3.8/bin/python3",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.8.7-final",
+            "major": 3,
+            "minor": 8,
+            "patch": 7,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.8.7-final"
+          },
+          "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.7/Frameworks/Python.framework/Versions/3.8",
+          "fileHash": "cf4906c1239f394aafc6fc696d1e48f1864ad6fe06c0ddba08d9b2147cd6cadd45e361292f371b7df281db6cc373ff07f7d417e5f96797b98a518a4f19debb77",
+          "type": "Unknown",
+          "cachedEntry": true,
+          "displayName": "Python 3.8.7 64-bit",
+          "__store": true
+        }
+      },
+      "expiry": 1618376363284
+    },
+    "/usr/local/opt/python@3.8/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.8.7 64-bit",
+        "hash": "cf4906c1239f394aafc6fc696d1e48f1864ad6fe06c0ddba08d9b2147cd6cadd45e361292f371b7df281db6cc373ff07f7d417e5f96797b98a518a4f19debb77-9c474c88e0dbf746cbf563cd582f256c"
+      },
+      "expiry": 1617857746634
+    },
+    "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.9 64-bit ('aiffel': pyenv)",
+        "hash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700-88a2cdbf4333b861ca3300db9913ce87"
+      },
+      "expiry": 1617857888118
+    },
+    "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.8.7 64-bit ('3.8.7': pyenv)",
+        "hash": "9a2ea24b043f07cf5039a496e13d9557e96c366c99dc0cadbff30b2c232b156af8f1802620dfda3ab70d032520a81cee576f8c4ccd79861fc89a3e03da681e88-649054469386c5df44995ac1fb1cc782"
+      },
+      "expiry": 1617857888123
+    },
+    "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/ujinyoung/.pyenv/versions/aiffel/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.9-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.9-final"
+          },
+          "sysPrefix": "/Users/ujinyoung/.pyenv/versions/aiffel",
+          "fileHash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700",
+          "envName": "aiffel",
+          "type": "Pyenv",
+          "displayName": "Python 3.7.9 64-bit ('aiffel': pyenv)"
+        }
+      },
+      "expiry": 1617857888161
+    },
+    "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "9a2ea24b043f07cf5039a496e13d9557e96c366c99dc0cadbff30b2c232b156af8f1802620dfda3ab70d032520a81cee576f8c4ccd79861fc89a3e03da681e88",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/ujinyoung/.pyenv/versions/3.8.7/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.8.7-final",
+            "major": 3,
+            "minor": 8,
+            "patch": 7,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.8.7-final"
+          },
+          "sysPrefix": "/Users/ujinyoung/.pyenv/versions/3.8.7",
+          "fileHash": "9a2ea24b043f07cf5039a496e13d9557e96c366c99dc0cadbff30b2c232b156af8f1802620dfda3ab70d032520a81cee576f8c4ccd79861fc89a3e03da681e88",
+          "envName": "3.8.7",
+          "type": "Pyenv",
+          "displayName": "Python 3.8.7 64-bit ('3.8.7': pyenv)"
+        }
+      },
+      "expiry": 1617857888170
+    },
+    "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.4 64-bit ('miniconda3-4.7.12': conda)",
+        "hash": "6dd41cf4bf5cecfb83b06dd0987874cd4ab1acc3e559fa1f43bd53ea9d0b2c44f081c1e671d4f2f7e25df3079ff6fd18428ce0a0981b4d737b93b68df617100f-a3a20e1f0d08cb60dadb68cee8fa2b07"
+      },
+      "expiry": 1617857890881
+    },
+    "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.9 64-bit ('aiffel': conda)",
+        "hash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700-4454922736cc80e3c0a96656cb6e88a4"
+      },
+      "expiry": 1617857978370
+    },
+    "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "6dd41cf4bf5cecfb83b06dd0987874cd4ab1acc3e559fa1f43bd53ea9d0b2c44f081c1e671d4f2f7e25df3079ff6fd18428ce0a0981b4d737b93b68df617100f",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.4-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 4,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.4-final"
+          },
+          "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+          "fileHash": "6dd41cf4bf5cecfb83b06dd0987874cd4ab1acc3e559fa1f43bd53ea9d0b2c44f081c1e671d4f2f7e25df3079ff6fd18428ce0a0981b4d737b93b68df617100f",
+          "companyDisplayName": "Anaconda, Inc.",
+          "type": "Conda",
+          "envPath": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12",
+          "envName": "miniconda3-4.7.12",
+          "displayName": "Python 3.7.4 64-bit ('miniconda3-4.7.12': conda)"
+        }
+      },
+      "expiry": 1617857978406
+    },
+    "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.9-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.9-final"
+          },
+          "sysPrefix": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel",
+          "fileHash": "f80dcf6b5c335ab767195407a92a81bcb1ad613d090238ef536117cac5618847b018593bb3f72ac81322f79a433451a45d8b47a5faad41f0459dcc7181d12700",
+          "companyDisplayName": "Anaconda, Inc.",
+          "type": "Conda",
+          "envPath": "/Users/ujinyoung/.pyenv/versions/miniconda3-4.7.12/envs/aiffel",
+          "envName": "aiffel",
+          "displayName": "Python 3.7.9 64-bit ('aiffel': conda)"
+        }
+      },
+      "expiry": 1617857978416
+    },
+    "/usr/local/bin/python3.9.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/local/bin/python3.9",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.9.4-final",
+          "major": 3,
+          "minor": 9,
+          "patch": 4,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.9.4-final"
+        },
+        "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
+        "fileHash": "9a43b9dd3ac9515dc598b39fe01d81726bb55d1a56edaee5387871192326f00044a1f0c5f21d6398b225c19130a05579e965a3344a28674b7ca0d1b610404427"
+      },
+      "expiry": 1618376363319
+    }
+  },
+  "coc-python|/Users/ujinyoung/selenium": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:0c12209a88a3aaa7ada760753e8d0cc1": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:0c12209a88a3aaa7ada760753e8d0cc1": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
     "SelectedPythonPath": "/Users/ujinyoung/.pyenv/versions/selenium/bin/python"
   },
   "coc-python|/Users/ujinyoung/board": {
@@ -2292,5 +2918,104 @@
   "coc-python|/Users/ujinyoung/aiffel_contents_01/contents/pre_math/math-01_diominor/steps": {
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
     "INTERPRETERS_CACHE_v3_PipEnvService": []
+  },
+  "coc-python|/Users/ujinyoung/dotfiles": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:e52665031e16f1c795b6cb33e41a9579": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:e52665031e16f1c795b6cb33e41a9579": [],
+    "autoSelectedWorkspacePythonInterpreter-/Users/ujinyoung/dotfiles": {
+      "architecture": 3,
+      "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp/bin/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.9.1-final",
+        "major": 3,
+        "minor": 9,
+        "patch": 1,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.9.1-final"
+      },
+      "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp",
+      "fileHash": "335bd428e7a15da23971adad70b823d015d4e073e41248f5571b54340a26769000b6e4099c8c63940f53ff27af3d94702be4ea65ba2f80e1265bddc80e7300b5",
+      "companyDisplayName": "Anaconda, Inc.",
+      "type": "Conda",
+      "envPath": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp",
+      "envName": "nlp",
+      "cachedEntry": true,
+      "displayName": "Python 3.9.1 64-bit ('nlp': conda)"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/Users/ujinyoung/QR-Code-SVG-Logo-Generator": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:c416713f7b48297abfbb204901bb3382": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:c416713f7b48297abfbb204901bb3382": [],
+    "autoSelectedWorkspacePythonInterpreter-/Users/ujinyoung/QR-Code-SVG-Logo-Generator": {
+      "architecture": 3,
+      "path": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp/bin/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.9.1-final",
+        "major": 3,
+        "minor": 9,
+        "patch": 1,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.9.1-final"
+      },
+      "sysPrefix": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp",
+      "fileHash": "335bd428e7a15da23971adad70b823d015d4e073e41248f5571b54340a26769000b6e4099c8c63940f53ff27af3d94702be4ea65ba2f80e1265bddc80e7300b5",
+      "companyDisplayName": "Anaconda, Inc.",
+      "type": "Conda",
+      "envPath": "/Users/ujinyoung/.pyenv/versions/anaconda3-5.3.1/envs/nlp",
+      "envName": "nlp",
+      "cachedEntry": true,
+      "displayName": "Python 3.9.1 64-bit ('nlp': conda)"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/Users/ujinyoung/aiffel_contents_01/contents": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:a575d939dd7bdb43bcec7b7ea492bc9f": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:a575d939dd7bdb43bcec7b7ea492bc9f": [],
+    "autoSelectedWorkspacePythonInterpreter-/Users/ujinyoung/aiffel_contents_01/contents": {
+      "architecture": 3,
+      "path": "/usr/local/opt/python@3.8/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.8.7-final",
+        "major": 3,
+        "minor": 8,
+        "patch": 7,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.8.7-final"
+      },
+      "sysPrefix": "/usr/local/Cellar/python@3.8/3.8.7/Frameworks/Python.framework/Versions/3.8",
+      "fileHash": "cf4906c1239f394aafc6fc696d1e48f1864ad6fe06c0ddba08d9b2147cd6cadd45e361292f371b7df281db6cc373ff07f7d417e5f96797b98a518a4f19debb77",
+      "type": "Unknown",
+      "cachedEntry": true,
+      "displayName": "Python 3.8.7 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
   }
 }

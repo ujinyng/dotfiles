@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "create-directus-project": "^9.0.0-rc.43",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.22.17",
+    "gatsby-cli": "^2.12.43",
+    "netlify-cli": "^2.53.0",
+    "nodejs": "^0.0.0"
+  }
+}
