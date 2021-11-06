@@ -21,12 +21,12 @@ _install(){
   brew update
   mas upgrade
   brew tap homebrew/bundle
-  brew bundle --file=$HOME/dotfiles/Brewfile
+  brew bundle --file=$HOME/dotfiles/Brewfile #Brewfile실행
   #remove old version
   brew cleanup
   brew cask cleanup
   
-  # restore from Dockerbox 
+  # restore from Dropbox 
   # mackup restore
 
   # git config 

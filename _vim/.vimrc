@@ -711,6 +711,8 @@ set wildmenu "자동완성 기능 향상
 
 "파일 인코딩
 set fileencodings=UTF-8,euc-kr
-"to use fzf in vim
+set encoding=utf-8
+set langmenu=utf-8
+"to use fzf in vim"
 set rtp+=/usr/local/opt/fzf
 

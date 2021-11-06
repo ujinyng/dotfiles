@@ -40,10 +40,12 @@ brew "highlight"
 brew "python@3.8"
 brew "openexr"
 brew "imagemagick"
+brew "kubernetes-cli"
 brew "librsvg"
 brew "libxml2"
 brew "mackup"
 brew "mas"
+brew "minikube"
 brew "mono"
 brew "neovim"
 brew "numpy"
@@ -78,6 +80,7 @@ cask "fanny"
 cask "firefox"
 cask "font-cascadia"
 cask "font-d2coding"
+cask "free-ruler"
 cask "gitter"
 cask "google-chrome"
 cask "grammarly"
@@ -111,7 +114,6 @@ mas "GIPHY CAPTURE", id: 668208984
 mas "GoodNotes", id: 1444383602
 mas "Grammarly for Safari", id: 1462114288
 mas "Hancom Office HWP 2014 VP Viewer", id: 416746898
-mas "iMovie", id: 408981434
 mas "KakaoTalk", id: 869223134
 mas "Keynote", id: 409183694
 mas "LINER", id: 1463530746
