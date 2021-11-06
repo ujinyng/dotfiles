@@ -40,7 +40,7 @@ _vim(){
   rsync -azvhrubR -L ~/./.vimrc ~/dotfiles/_vim
   rsync -azvhrubR -L ~/./.vim/autoload/ ~/dotfiles/_vim
   rsync -azvhrubR -L ~/./.vim/plugged/ ~/dotfiles/_vim
-  rsync -azvhrubR -L ~/./.config/coc/ ~/dotfiles/_vim
+  rsync -azvhrubR -L ~/./.config/coc/extensions ~/dotfiles/_vim
   rsync -azvhrubR -L ~/./.config/nvim/ ~/dotfiles/_vim
   rsync -azvhrubR -L ~/./.local/share/nvim/session/ ~/dotfiles/_vim
   rsync -azvhrubR -L ~/./.NERDTreeBookmarks ~/dotfiles/_vim
