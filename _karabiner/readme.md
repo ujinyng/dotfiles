@@ -17,8 +17,11 @@ It's the settings file to use language conversion key on MacBook's internal keyb
   - Otherwise, it will open a Character Viewer that can use emojis and special characters.
 
 
+
 ### `TM860BL.json`
 This file changes the Bluetooth-connected TM860 keyboard (for Windows) to Mac keyboard.
+
+> :warning: It may not work properly.
 
 > :warning: **Warning** The keyboard has 3 connection methods.  
 > If you connect in a way other than bluetooth, the changed Vendor ID of the Devices tab must be reflected in the file.  
@@ -40,16 +43,6 @@ This mean:
 ```
 (caps_lock)+lang1 => right_option
 ```
-
-(caps_lock)+lang1 => right_option
-
-(caps_lock)+lang1 => spacebar+left_control
-
-(caps_lock)+right_option => spacebar+left_controol 
-
-left_control+spacebar+(cabslock)-> Kor/Eng
-
-
 ### from.modifiers
 
 |     key     | required |   description   ||
@@ -57,6 +50,6 @@ left_control+spacebar+(cabslock)-> Kor/Eng
 | `mandatory` | optional | must be pressed | removed from to events |
 | `optional`  | optional | can be pressed  | kept in to events |
 
-### to.modifiers
+### References
 
 https://karabiner-elements.pqrs.org/docs/

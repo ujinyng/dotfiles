@@ -36,6 +36,7 @@ brew "fzf"
 brew "gdb"
 brew "gdk-pixbuf"
 brew "geckodriver"
+brew "gh"
 brew "highlight"
 brew "python@3.8"
 brew "openexr"
@@ -81,6 +82,7 @@ cask "firefox"
 cask "font-cascadia"
 cask "font-d2coding"
 cask "free-ruler"
+cask "github"
 cask "gitter"
 cask "google-chrome"
 cask "grammarly"
@@ -104,7 +106,9 @@ cask "visual-studio-code"
 cask "zoom"
 mas "Allkdic", id: 1033453958
 mas "Be Focused", id: 973134470
+mas "Claquette", id: 587748131
 mas "com.alice.mac.GetPlainText", id: 508368068
+mas "EasyRes", id: 688211836
 mas "Elmedia Video Player", id: 1044549675
 mas "Filmage Screen", id: 1475049179
 mas "Friendly Streaming", id: 553245401

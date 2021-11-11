@@ -1,0 +1,493 @@
+{
+	"title": "윈도우 키보드 설정 (rev.0.42)",
+	"rules": [
+		{
+			"description": "한/영키를 한영전환으로 사용",
+			"manipulators": [
+				{ 
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+                                "com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+
+							]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"from": { 
+						"key_code": "lang1",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [ { "key_code": "right_option" } ]
+        		},
+				{ 
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+                                "com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+
+							]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"from": { 
+						"key_code": "lang1",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [
+						{
+							"key_code": "spacebar",
+							"modifiers": [
+								"left_control",
+								"left_option"
+							]
+						}
+					]
+				},
+        		{ 
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+                                "com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+
+							]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"from": { 
+						"key_code": "right_option",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [
+						{
+							"key_code": "spacebar",
+							"modifiers": [
+								"left_control",
+								"left_option"
+							]
+						}
+					]
+				}
+			]
+		},
+		
+		{
+			"description": "한자키/오른쪽 컨트롤키를 한자/특수문자로 사용",
+			"manipulators": [
+				{
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_if",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+							]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"from": { 
+						"key_code": "right_option",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [ { "key_code": "right_control" } ]
+				},
+				{
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+							]
+						},
+						{
+							"type": "input_source_if",
+							"input_sources": [ { "language": "en" } ]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"parameters": {
+						"basic.to_if_held_down_threshold_milliseconds": 300
+					},
+					"from": { 
+						"key_code": "right_option",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [
+						{
+							"key_code": "right_option",
+							"lazy": true
+						}
+					],
+					"to_if_held_down": [
+						{
+							"key_code": "spacebar",
+							"modifiers": [
+								"left_control",
+								"left_command"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+							]
+						},
+						{
+							"type": "input_source_if",
+							"input_sources": [ { "language": "ko" } ]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"parameters": {
+						"basic.to_if_alone_timeout_milliseconds": 300,
+						"basic.to_if_held_down_threshold_milliseconds": 300
+					},
+					"from": { 
+						"key_code": "right_option",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [
+						{
+							"key_code": "lang2",
+							"lazy": true
+						}
+					],
+					"to_if_alone": [
+						{
+							"key_code": "return_or_enter",
+							"modifiers": [ "right_option" ]
+						}
+					],
+					"to_if_held_down": [
+						{
+							"key_code": "spacebar",
+							"modifiers": [
+								"left_control",
+								"left_command"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+								]
+						},
+						{
+							"type": "input_source_if",
+							"input_sources": [ { "language": "en" } ]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"parameters": {
+						"basic.to_if_held_down_threshold_milliseconds": 300
+					},
+					"from": { 
+						"key_code": "right_control",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [
+						{
+							"key_code": "right_control",
+							"lazy": true
+						}
+					],
+					"to_if_held_down": [
+						{
+							"key_code": "spacebar",
+							"modifiers": [
+								"left_control",
+								"left_command"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"conditions": [
+						{
+							"type": "frontmost_application_unless",
+							"bundle_identifiers": [
+								"com.parallels.desktop",
+								"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+								"com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+								]
+						},
+						{
+							"type": "input_source_if",
+							"input_sources": [ { "language": "ko" } ]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"parameters": {
+						"basic.to_if_alone_timeout_milliseconds": 300,
+						"basic.to_if_held_down_threshold_milliseconds": 300
+					},
+					"from": { 
+						"key_code": "right_control",
+						"modifiers": { "optional": [ "caps_lock" ] }
+					},
+					"to": [
+						{
+							"key_code": "right_control",
+							"lazy": true
+						}
+					],
+					"to_if_alone": [
+						{
+							"key_code": "return_or_enter",
+							"modifiers": [ "right_option" ]
+						}
+					],
+					"to_if_held_down": [
+						{
+							"key_code": "spacebar",
+							"modifiers": [
+								"left_control",
+								"left_command"
+							]
+						}
+					]
+				}				
+				
+			]
+		},
+		
+		{
+			"description": "Application키를 fn키로 사용",
+			"manipulators": [
+				{ 
+      			"type": "basic",
+      			"conditions": [
+      				{
+      					"type": "frontmost_application_unless",
+      					"bundle_identifiers": [
+      						"com.parallels.desktop",
+      						"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+                                "com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+
+							]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+        			"from": { 
+        				"key_code": "application",
+        				"modifiers": { "optional": [ "any" ] }
+        			},
+          		"to": [ { "key_code": "fn" } ]
+        		}
+			]
+		},
+		
+		{
+			"description": "PrintScreen을 스크린샷으로 사용 (한번 누르면 부분, 길게 누르면 전체)",
+			"manipulators": [
+				{ 
+      			"type": "basic",
+      			"conditions": [
+      				{
+      					"type": "frontmost_application_unless",
+      					"bundle_identifiers": [
+      						"com.parallels.desktop",
+      						"com.parallels.vm",
+								"com.parallels.desktop.console",
+								"com.parallels.winapp.",
+                                "com.google.Chrome",
+                                "com.microsoft.rdc.macos"
+
+							]
+						},
+						{
+							"type": "device_unless",
+							"identifiers": [ { "vendor_id": 1452 } ]
+						}
+					],
+					"parameters": { 
+						"basic.to_if_alone_timeout_milliseconds": 200,
+						"basic.to_if_held_down_threshold_milliseconds": 200
+					},
+        			"from": { "key_code": "print_screen" },
+          		"to_if_alone": [
+          			{
+          				"key_code": "4",
+          				"modifiers": [
+          					"left_shift",
+          					"left_command"
+          				]
+          			}
+         		],
+          		"to_if_held_down": [
+          			{
+          				"key_code": "3",
+          				"modifiers": [
+          					"left_shift",
+          					"left_command"
+          				]
+          			}
+         		]
+        		}
+			]
+		},
+        {
+                    "description": "Left_Alt to Left_Command 사용",
+                    "manipulators": [
+                        {
+                          "type": "basic",
+                          "conditions": [
+                              {
+                                  "type": "frontmost_application_unless",
+                                  "bundle_identifiers": [
+                                      "com.parallels.desktop",
+                                      "com.parallels.vm",
+                                        "com.parallels.desktop.console",
+                                        "com.parallels.winapp.",
+                                        "com.google.Chrome",
+                                        "com.microsoft.rdc.macos"
+
+                                    ]
+                                },
+                                {
+                                    "type": "device_unless",
+                                    "identifiers": [ { "vendor_id": 1452 } ]
+                                }
+                            ],
+                            "from": {
+                                "key_code": "left_option",
+                                "modifiers": {
+                                    "mandatory": [ "any" ],
+                                    "optional": [ "caps_lock" ]
+                                }
+                            },
+                          "to": [
+                                {
+                                    "key_code": "left_command"
+                                }
+                          ]
+                        }
+                        ]
+                    },
+                    {
+                            "description": "Left_Command to Left_Option 사용",
+                            "manipulators": [
+                                {
+                                  "type": "basic",
+                                  "conditions": [
+                                      {
+                                          "type": "frontmost_application_unless",
+                                          "bundle_identifiers": [
+                                              "com.parallels.desktop",
+                                              "com.parallels.vm",
+                                                "com.parallels.desktop.console",
+                                                "com.parallels.winapp.",
+                                                "com.google.Chrome",
+                                                "com.microsoft.rdc.macos"
+
+                                            ]
+                                        },
+                                        {
+                                            "type": "device_unless",
+                                            "identifiers": [ { "vendor_id": 1452 } ]
+                                        }
+                                    ],
+                                    "from": {
+                                        "key_code": "left_command",
+                                        "modifiers": {
+                                            "mandatory": [ "any" ],
+                                            "optional": [ "caps_lock" ]
+                                        }
+                                    },
+                                  "to": [
+                                        {
+                                            "key_code": "left_option"
+                                        }
+                                  ]
+                                }
+                                ]
+                            }
+                
+	]
+}
