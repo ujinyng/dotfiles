@@ -25,7 +25,8 @@ help(){
 }
 
 _karabiner(){
-  rsync -azvhrubR -L ~/./.config/karabiner ~/dotfiles/_karabiner
+  rsync -azvhrubR -L ~/./.config/karabiner/assets ~/dotfiles/_karabiner
+  rsync -azvhrubR -L ~/./.config/karabiner/karabiner.json ~/dotfiles/_karabiner 
 }
 
 _zsh(){

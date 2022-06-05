@@ -3,7 +3,7 @@
   email = ujinyng@gmail.com
   username = ujinyng
 [core]
-  excludesfile = /Users/ujinyoung/.gitignore_global
+	excludesfile = /Users/ujinyoung/.gitignore_global
   editor=/usr/local/bin/nvim
   autocrlf = input
   precomposeunicode = true

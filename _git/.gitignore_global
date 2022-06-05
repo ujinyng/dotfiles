@@ -1,3 +1,7 @@
+#custom
+1
+()
+
 ## macOS
 # General
 .DS_Store
@@ -9,6 +13,9 @@ Icon
 
 # Thumbnails
 ._*
+
+# Obsidian's workspace cache
+.obsidian/workspace.json
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
@@ -428,7 +435,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# lib/
 lib64/
 parts/
 sdist/
@@ -565,7 +572,7 @@ devel/
 logs/
 build/
 bin/
-lib/
+#lib/
 msg_gen/
 srv_gen/
 msg/*Action.msg

@@ -298,13 +298,13 @@ nnoremap <silent><C-q> :bp <BAR> bd #<CR> "현재버퍼를 닫고 이전 버퍼�
 ":e <파일경로>
 
 
-"ESC키 대신 ii  (set paste 해제해야함)
-"insert to normal
-inoremap aa <ESC>
-"command to normal
-cmap aa <ESC>
-"visual/select to normal
-vnoremap aa <ESC>
+""ESC키 대신 aa (set paste 해제해야함)
+""insert to normal
+"inoremap aa <ESC>
+""command to normal
+"cmap aa <ESC>
+""visual/select to normal
+"vnoremap aa <ESC>
 
 "insert to command
 noremap! ;; <ESC>:
@@ -700,7 +700,7 @@ set incsearch "Make search act like search in modern browsers
 
 "use mouse for visual mode or not
 set mouse=a
-"set mouse=-a
+"set mouse=-af
 set mousefocus
 
 set showcmd "키보드 눌러서 사용하는 명령어보여줌

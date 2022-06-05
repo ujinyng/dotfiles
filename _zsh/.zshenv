@@ -167,4 +167,4 @@ export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/python@3.8/lib:$LDFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig:$PKG_CONFIG_PATH"
-
+export TERM=xterm-256color

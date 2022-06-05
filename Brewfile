@@ -73,6 +73,7 @@ brew "koekeishiya/formulae/yabai", args: ["HEAD"]
 cask "adware-removal-tool"
 cask "app-cleaner"
 cask "avira-antivirus"
+cask "box-drive"
 cask "discord"
 cask "docker"
 cask "dropbox"
@@ -99,9 +100,11 @@ cask "osxfuse"
 cask "pycharm"
 cask "slack"
 cask "spectacle"
+cask "spotify"
 cask "teamviewer"
 cask "twitch"
 cask "typora"
+cask "vagrant"
 cask "visual-studio-code"
 cask "zoom"
 mas "Allkdic", id: 1033453958
@@ -132,5 +135,6 @@ mas "Polaris Office", id: 1098211970
 mas "Save to Pocket", id: 1477385213
 mas "Scrap Paper", id: 1448441317
 mas "Spark", id: 1176895641
+mas "Telegram", id: 747648890
 mas "Xcode", id: 497799835
 mas "xFormula", id: 1503622988
