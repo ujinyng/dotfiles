@@ -112,7 +112,6 @@ mas "Be Focused", id: 973134470
 mas "Claquette", id: 587748131
 mas "com.alice.mac.GetPlainText", id: 508368068
 mas "EasyRes", id: 688211836
-mas "Elmedia Video Player", id: 1044549675
 mas "Filmage Screen", id: 1475049179
 mas "Friendly Streaming", id: 553245401
 mas "GarageBand", id: 682658836

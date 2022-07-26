@@ -15,8 +15,8 @@
 #-L : symbolic link를 따라가서 원본 파일을 복제
 help(){
   echo "back _[GROUP_NAME]
-     GROUP: zsh, vim, tmux, git, fzf, gdb, yarn, py, etc, brew, karabiner
-     or 'a' in place of GROUP for principal things
+  GROUP: zsh, vim, tmux, git, fzf, docker, yarn, py, etc, brew, karabiner, (gdb)
+     or 'all' in place of GROUP for principal things
     "
 }
 
@@ -98,10 +98,14 @@ _py(){
   # rsync -azvhrubR -L ~/./piplist ~/dotfiles/_py
 }
 
+_docker(){
+  rsync -azvhrubR -L ~/./.docker/ ~/dotfiles/_docker
+}
+
+
 _etc(){
-  rsync -azvhrubR -L ~/./.docker/ ~/dotfiles/_etc
   # rsync -azvhrubR -L ~/./.fasd ~/dotfiles/_etc
-  rsync -azvhrubR -L ~/./.notable.json/ ~/dotfiles/_etc
+  # rsync -azvhrubR -L ~/./.notable.json/ ~/dotfiles/_etc
  # rsync -azvhrubR -L ~/./.skhdrc ~/dotfiles/_etc
  # rsync -azvhrubR -L ~/./.yabairc ~/dotfiles/_etc
 }
@@ -111,6 +115,9 @@ _brew(){
   mv ~/dotfiles/Brewfile ~/dotfiles/Brewfile~
   brew bundle dump --force --file=~/./Brewfile
   rsync -azvhrubR -L ~/./Brewfile ~/dotfiles/Brewfile
+
+  rsync -azvhrubR -L ~/./Brewmas ~/dotfiles/Brewmas
+  
 }
 
 _rclone(){

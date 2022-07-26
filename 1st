@@ -22,6 +22,7 @@ _install(){
   mas upgrade
   brew tap homebrew/bundle
   brew bundle --file=$HOME/dotfiles/Brewfile #Brewfile실행
+  brew bundle --file=$HOME/dotfiles/Brewmask #mask로 설치 실행
   #remove old version
   brew cleanup
   brew cask cleanup
