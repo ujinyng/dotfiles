@@ -10,16 +10,24 @@ It's the settings file to use language conversion key on MacBook's internal keyb
 
 - Change **Right Command** key to **Kor/Eng(한/영)** key 
   - Switch keyboard language.
-- Change **Right Option** key to **Hanja(한자)** key. 
-  
+- Change **Right Option** key to **emoji** and **Hanja(한자)** key. 
 
-  - If there is a cursor behind Hangul, it will be used as a Chinese character key that can change Hangul to Hanja.  
-  - Otherwise, it will open a Character Viewer that can use emojis and special characters.
-
+  - Give it a short press, it will open a Character Viewer that can use emojis and special characters.
+  - If a long press and the letter to the left of the cursor is Hangul, it will be used as a Chinese character key that can change Hangul to Hanja.  
 
 
 ### `TM860BL.json`
-This file changes the Bluetooth-connected TM860 keyboard (for Windows) to Mac keyboard.
+This file changes the Bluetooth-connected TM860 keyboard (for Windows) to Mac keyboard without driver program.
+
+| Default | **Result**       |
+| :-----: | :-----------: |
+| ESC | ` |
+| ESC + Shift  | ~ |
+| CapsLock+Shift | ESC |
+| PageDown | Delete |
+| PageUp | Insert |
+| Del | Screenshot app |
+| Del (long press) | Mac's fn key |
 
 > :warning: It may not work properly.
 
@@ -50,6 +58,6 @@ This mean:
 | `mandatory`   | optional   | must be pressed   | removed from to events |
 | `optional`    | optional   | can be pressed    | kept in to events      |
 
-### References
+### more info
 
 https://karabiner-elements.pqrs.org/docs/
