@@ -1,0 +1,576 @@
+{
+  "title": "윈도우 키보드 설정",
+  "rules": [
+    {
+      "description": "한/영키를 한영전환으로 사용",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "right_option",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_option"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "right_option",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control",
+                "left_option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "윈도우 오른쪽 컨트롤키를 특수문자/한자 키로 사용",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "en"
+                }
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 300
+          },
+          "from": {
+            "key_code": "right_congrol",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_control",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control",
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "ko"
+                }
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 300,
+            "basic.to_if_held_down_threshold_milliseconds": 300
+          },
+          "from": {
+            "key_code": "right_control",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_control",
+              "lazy": true
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control",
+                "left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ins(default: Page Up) 를 insert키로 사용",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "from":
+          {
+            "key_code": "page_up",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+          "description": "Del(default: Page Down) 를 delete키로 사용",
+          "manipulators": [
+            {
+              "type": "basic",
+              "conditions": [
+                {
+                  "type": "frontmost_application_unless",
+                  "bundle_identifiers": [
+                    "com.parallels.desktop",
+                    "com.parallels.vm",
+                    "com.parallels.desktop.console",
+                    "com.parallels.winapp.",
+                    "com.microsoft.rdc.macos"
+                  ]
+                },
+                {
+                  "type": "device_unless",
+                  "identifiers": [
+                    {
+                      "vendor_id": 1452
+                    }
+                  ]
+                }
+              ],
+              "from":
+              {
+                "key_code": "page_down",
+                "modifiers": {
+                  "optional": [
+                    "any"
+                  ]
+                }
+              },
+              "to":
+              [
+                {
+                  "key_code": "delete_forward"
+                }
+              ]
+            }
+          ]
+        },
+    {
+      "description": "PrtSc(default: delete키 위치)를 스크린샷/fn으로 사용",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [    {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "delete_forward"
+          },
+          "to_if_alone": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_shift",
+                "left_command"
+              ]
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "fn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "ESC를 `(grave accent)로 사용",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [    {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "escape"
+          },
+          "to" : {
+              "key_code": "grave_accent_and_tilde"
+          }
+        }
+      ]
+    },
+    {
+          "description": "ESC+Shift를 ~(tilde)로 사용",
+          "manipulators": [
+            {
+              "type": "basic",
+              "conditions": [
+                {
+                  "type": "frontmost_application_unless",
+                  "bundle_identifiers": [
+                    "com.parallels.desktop",
+                    "com.parallels.vm",
+                    "com.parallels.desktop.console",
+                    "com.parallels.winapp.",
+                    "com.microsoft.rdc.macos"
+                  ]
+                },
+                {
+                  "type": "device_unless",
+                  "identifiers": [    {
+                      "vendor_id": 1452
+                    }
+                  ]
+                }
+              ],
+              "from": {
+                "key_code": "escape",
+                "modifiers": {
+                              "mandatory": [
+                                "shift"
+                              ]
+                            }
+              },
+              "to" :[ {
+                  "key_code": "grave_accent_and_tilde",
+                  "modifiers": ["shift"]
+              }
+              ]
+            }
+          ]
+        },
+    {
+              "description": "Caps Lock을 ESC로 사용",
+              "manipulators": [
+                {
+                  "type": "basic",
+                  "conditions": [
+                    {
+                      "type": "frontmost_application_unless",
+                      "bundle_identifiers": [
+                        "com.parallels.desktop",
+                        "com.parallels.vm",
+                        "com.parallels.desktop.console",
+                        "com.parallels.winapp.",
+                        "com.microsoft.rdc.macos"
+                      ]
+                    },
+                    {
+                      "type": "device_unless",
+                      "identifiers": [    {
+                          "vendor_id": 1452
+                        }
+                      ]
+                    }
+                  ],
+                  "from": {
+                    "key_code": "caps_lock"
+                  },
+                  "to" : {
+                      "key_code": "escape"
+    
+                  }
+                }
+              ]
+            },
+    {
+                  "description": "Caps Lock+Shift을 Caps Lock으로 사용",
+                  "manipulators": [
+                    {
+                      "type": "basic",
+                      "conditions": [
+                        {
+                          "type": "frontmost_application_unless",
+                          "bundle_identifiers": [
+                            "com.parallels.desktop",
+                            "com.parallels.vm",
+                            "com.parallels.desktop.console",
+                            "com.parallels.winapp.",
+                            "com.microsoft.rdc.macos"
+                          ]
+                        },
+                        {
+                          "type": "device_unless",
+                          "identifiers": [    {
+                              "vendor_id": 1452
+                            }
+                          ]
+                        }
+                      ],
+                      "from": {
+                        "key_code": "caps_lock",
+                        "mandatory": [
+                                        "shift"
+                                      ]
+                      },
+                      "to" : {
+                          "key_code": "caps_lock"
+        
+                      }
+                    }
+                  ]
+                },
+    {
+      "description": "Left_Alt to Left_Command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "left_option",
+            "modifiers": {
+              "mandatory": [
+                "any"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Left_Command to Left_Option",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.parallels.desktop",
+                "com.parallels.vm",
+                "com.parallels.desktop.console",
+                "com.parallels.winapp.",
+                "com.microsoft.rdc.macos"
+              ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "left_command",
+            "modifiers": {
+              "mandatory": [
+                "any"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_option"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

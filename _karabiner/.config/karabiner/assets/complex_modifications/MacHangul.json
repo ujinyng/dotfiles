@@ -4,30 +4,7 @@
 		{
 			"description": "맥북키보드 R_Command를 한영키로 사용",
 			"manipulators": [
-				{
-					"type": "basic",
-					"conditions": [
-						{
-							"type": "frontmost_application_if",
-							"bundle_identifiers": [
-								"com.parallels.desktop",
-								"com.parallels.vm",
-								"com.parallels.desktop.console",
-								"com.parallels.winapp.",
-								"com.microsoft.rdc.macos"
-							]
-						},
-                        {
-                            "type": "device_if",
-                            "identifiers": [ { "vendor_id": 1452 }]
-                        }
-					],
-                "from": {
-                    "key_code": "right_command",
-                    "modifiers": { "optional": [ "caps_lock" ] }
-                },
-                "to": [ { "key_code": "right_option" } ]
-            },
+				
 				{ 
                     "type": "basic",
                     "conditions": [
