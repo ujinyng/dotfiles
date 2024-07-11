@@ -1,6 +1,6 @@
 [user]
-  name = Jinyoung Yoo
-  email = ujinyng@gmail.com
+	name = ujinyng
+	email = ujinyng@gmail.com
   username = ujinyng
 [core]
 	excludesfile = /Users/ujinyoung/.gitignore_global
@@ -165,3 +165,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[inlude]
+	path = .gitconfig
