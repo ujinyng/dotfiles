@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-
+# only use rsync
 
 #usage: "back _function" 
 
@@ -112,10 +112,12 @@ _etc(){
 
 _brew(){
   rm ~/dotfiles/Brewfile~
+  rm ~/dotfiles/Brewmas~
   mv ~/dotfiles/Brewfile ~/dotfiles/Brewfile~
+  mv ~/dotfiles/Brewmas ~/dotfiles/Brewmas~
   brew bundle dump --force --file=~/./Brewfile
+  brew bundle --mas dump --force --file=~/./Brewmas
   rsync -azvhrubR -L ~/./Brewfile ~/dotfiles/Brewfile
-
   rsync -azvhrubR -L ~/./Brewmas ~/dotfiles/Brewmas
   
 }

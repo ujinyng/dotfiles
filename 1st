@@ -21,8 +21,8 @@ _install(){
   brew update
   mas upgrade
   brew tap homebrew/bundle
-  brew bundle --file=$HOME/dotfiles/Brewfile #Brewfile실행
-  brew bundle --file=$HOME/dotfiles/Brewmask #mask로 설치 실행
+  brew bundle --file=$HOME/dotfiles/Brewfile #Brewfile로 설치
+  brew bundle --file=$HOME/dotfiles/Brewmas #mas로 appstore 앱 설치
   #remove old version
   brew cleanup
   brew cask cleanup
@@ -31,8 +31,11 @@ _install(){
   # mackup restore
 
   # git config 
-  [ ! -f $HOME/.gitconfig ] && ln -bns $HOME/dotfiles/.gitconfig $HOME/.gitconfig
-  [ ! -f $HOME/.gitignore_global ] && ln -bns $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
+  [ ! -f $HOME/.gitconfig ] && ln -ns $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+  [ ! -f $HOME/.gitignore_global ] && ln -ns $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
+#  [ ! -f $HOME/.gitconfig ] && ln -bns $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+#  [ ! -f $HOME/.gitignore_global ] && ln -bns $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
+#  git config --global inlude.path ../.gitconfig
 
   # oh-my-zsh 
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
