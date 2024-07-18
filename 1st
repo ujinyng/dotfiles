@@ -28,9 +28,9 @@ _install(){
   brew cask cleanup
   
   # restore from Dropbox 
-  # mackup restore
+  mackup restore
 
-  # git config 
+  # git config (mackup으로 dropbox에 링크생성되지 않은 경우)
   [ ! -f $HOME/.gitconfig ] && ln -ns $HOME/dotfiles/.gitconfig $HOME/.gitconfig
   [ ! -f $HOME/.gitignore_global ] && ln -ns $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
 #  [ ! -f $HOME/.gitconfig ] && ln -bns $HOME/dotfiles/.gitconfig $HOME/.gitconfig
