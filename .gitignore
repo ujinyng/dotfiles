@@ -1,5 +1,8 @@
 
-_vim/.config/coc/mru
+_vim/.config/coc
+# autoload -> Mackup
+_vim/autoload
+
 *.swl
 *.swm
 *.swn
