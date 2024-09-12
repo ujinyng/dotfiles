@@ -1,4 +1,4 @@
-" MIT License. Copyright (c) 2013-2020 Bailey Ling, Christian Brabandt et al.
+" MIT License. Copyright (c) 2013-2021 Bailey Ling, Christian Brabandt et al.
 " vim: et ts=2 sts=2 sw=2
 
 let s:save_cpo = &cpo
@@ -47,14 +47,6 @@ function! s:init()
   call airline#util#doautocmd('AirlineAfterInit')
 endfunction
 
-function! s:do_vim_enter()
-  " Needed for the Vista extension #2009
-  if get(g:, 'airline#extensions#vista#enabled', 1) && exists(':Vista')
-    call vista#RunForNearestMethodOrFunction()
-  endif
-  call <sid>on_window_changed('VimEnter')
-endfunction
-
 let s:active_winnr = -1
 function! s:on_window_changed(event)
   " don't trigger for Vim popup windows
@@ -83,6 +75,10 @@ function! s:on_window_changed(event)
 endfunction
 
 function! s:on_focus_gained()
+  if &eventignore =~? 'focusgained'
+    return
+  endif
+
   if airline#util#try_focusgained()
     unlet! w:airline_lastmode | :call <sid>airline_refresh(1)
   endif
@@ -99,7 +95,6 @@ function! s:on_colorscheme_changed()
   call s:init()
   unlet! g:airline#highlighter#normal_fg_hi
   call airline#highlighter#reset_hlcache()
-  let g:airline_gui_mode = airline#init#gui_mode()
   if !s:theme_in_vimrc
     call airline#switch_matching_theme()
   endif
@@ -139,17 +134,13 @@ function! s:airline_toggle()
             \ | call <sid>on_window_changed('CmdwinEnter')
       autocmd CmdwinLeave * call airline#remove_statusline_func('airline#cmdwinenter')
 
-      autocmd GUIEnter,ColorScheme * call <sid>on_colorscheme_changed()
-      if exists("##OptionSet")
-        " Make sure that g_airline_gui_mode is refreshed
-        autocmd OptionSet termguicolors call <sid>on_colorscheme_changed()
-      endif
+      autocmd ColorScheme * call <sid>on_colorscheme_changed()
       " Set all statuslines to inactive
       autocmd FocusLost * call airline#update_statusline_focuslost()
       " Refresh airline for :syntax off
       autocmd SourcePre */syntax/syntax.vim
             \ call airline#extensions#tabline#buffers#invalidate()
-      autocmd VimEnter * call <sid>do_vim_enter()
+      autocmd VimEnter * call <sid>on_window_changed('VimEnter')
       autocmd WinEnter * call <sid>on_window_changed('WinEnter')
       autocmd FileType * call <sid>on_window_changed('FileType')
       autocmd BufWinEnter * call <sid>on_window_changed('BufWinEnter')
@@ -161,7 +152,7 @@ function! s:airline_toggle()
       autocmd CursorMoved * call <sid>on_cursor_moved()
 
       autocmd VimResized * call <sid>on_focus_gained()
-      if exists('*timer_start') && exists('*funcref')
+      if exists('*timer_start') && exists('*funcref') && &eventignore !~? 'focusgained'
         " do not trigger FocusGained on startup, it might erase the intro screen (see #1817)
         " needs funcref() (needs 7.4.2137) and timers (7.4.1578)
         let Handler=funcref('<sid>FocusGainedHandler')
@@ -185,11 +176,19 @@ function! s:airline_toggle()
         " Force update of tabline more often
         autocmd InsertEnter,InsertLeave,CursorMovedI * :call airline#update_tabline()
       endif
+
+      if exists("##ModeChanged")
+        autocmd ModeChanged * :call airline#update_tabline()
+      endif
     augroup END
 
     if !airline#util#stl_disabled(winnr())
       if &laststatus < 2
+        let _scroll=&scroll
         set laststatus=2
+        if &scroll != _scroll
+          let &scroll = _scroll
+        endif
       endif
     endif
     if s:airline_initialized
@@ -239,7 +238,7 @@ function! s:airline_refresh(...)
 endfunction
 
 function! s:FocusGainedHandler(timer)
-  if exists("s:timer") && a:timer == s:timer
+  if exists("s:timer") && a:timer == s:timer && exists('#airline') && &eventignore !~? 'focusgained'
     augroup airline
       au FocusGained * call s:on_focus_gained()
     augroup END
@@ -248,7 +247,7 @@ endfu
 
 function! s:airline_extensions()
   let loaded = airline#extensions#get_loaded_extensions()
-  let files = split(globpath(&rtp, "autoload/airline/extensions/*.vim"), "\n")
+  let files = split(globpath(&rtp, 'autoload/airline/extensions/*.vim', 1), "\n")
   call map(files, 'fnamemodify(v:val, ":t:r")')
   if empty(files)
     echo "No extensions loaded"
@@ -301,6 +300,9 @@ command! AirlineExtensions   call s:airline_extensions()
 
 call airline#init#bootstrap()
 call s:airline_toggle()
+if exists("v:vim_did_enter") && v:vim_did_enter
+  call <sid>on_window_changed('VimEnter')
+endif
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

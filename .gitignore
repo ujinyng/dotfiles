@@ -1,7 +1,7 @@
 
 _vim/.config/coc
 # autoload -> Mackup
-_vim/autoload
+_vim/.vim/autoload
 
 *.swl
 *.swm

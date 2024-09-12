@@ -1,40 +1,57 @@
+scriptencoding utf-8
 let s:is_vim = !has('nvim')
 let s:channel_map = {}
 let s:is_win = has('win32') || has('win64')
 
 " start terminal, return [bufnr, pid]
-function! coc#terminal#start(cmd, cwd, env) abort
+function! coc#terminal#start(cmd, cwd, env, strict) abort
   if s:is_vim && !has('terminal')
     throw 'terminal feature not supported by current vim.'
   endif
   let cwd = empty(a:cwd) ? getcwd() : a:cwd
-  execute 'belowright 8new +setl\ buftype=nofile'
+  execute 'belowright '.get(g:, 'coc_terminal_height', 8).'new +setl\ buftype=nofile'
   setl winfixheight
   setl norelativenumber
   setl nonumber
   setl bufhidden=hide
   if exists('#User#CocTerminalOpen')
-    exe 'doautocmd User CocTerminalOpen'
+    exe 'doautocmd <nomodeline> User CocTerminalOpen'
   endif
   let bufnr = bufnr('%')
+  let env = {}
+  let original = {}
+  if !empty(a:env)
+    " use env option when possible
+    if s:is_vim
+      let env = copy(a:env)
+    elseif exists('*setenv')
+      for key in keys(a:env)
+        let original[key] = getenv(key)
+        call setenv(key, a:env[key])
+      endfor
+    endif
+  endif
 
   function! s:OnExit(status) closure
+    call coc#rpc#notify('CocAutocmd', ['TermExit', bufnr, a:status])
     if a:status == 0
       execute 'silent! bd! '.bufnr
     endif
   endfunction
 
   if has('nvim')
-    if !empty(a:env)
-      for key in keys(a:env)
-        execute 'let $'.key." = '".a:env[key]."'"
-      endfor
-    endif
     let job_id = termopen(a:cmd, {
           \ 'cwd': cwd,
-          \ 'pty': 1,
+          \ 'pty': v:true,
           \ 'on_exit': {job, status -> s:OnExit(status)},
+          \ 'env': env,
+          \ 'clear_env': a:strict ? v:true : v:false
           \ })
+    if !empty(original) && exists('*setenv')
+      for key in keys(original)
+        call setenv(key, original[key])
+      endfor
+    endif
     if job_id == 0
       throw 'create terminal job failed'
     endif
@@ -49,7 +66,7 @@ function! coc#terminal#start(cmd, cwd, env) abort
           \ 'term_finish': 'close',
           \ 'exit_cb': {job, status -> s:OnExit(status)},
           \ 'curwin': 1,
-          \ 'env': a:env,
+          \ 'env': env,
           \})
     if res == 0
       throw 'create terminal job failed'
@@ -67,14 +84,16 @@ function! coc#terminal#send(bufnr, text, add_new_line) abort
   if has('nvim')
     let lines = split(a:text, '\v\r?\n')
     if a:add_new_line && !empty(lines[len(lines) - 1])
-      call add(lines, '')
+      if s:is_win
+        call add(lines, "\r\n")
+      else
+        call add(lines, '')
+      endif
     endif
     call chansend(chan, lines)
-    let winnr = bufwinnr(a:bufnr)
-    if winnr != -1
-      exe 'noa '.winnr.'wincmd w'
-      exe 'noa normal! G'
-      exe 'noa '.wincmd p
+    let winid = bufwinid(a:bufnr)
+    if winid != -1
+      call coc#compat#execute(winid, 'noa normal! G')
     endif
   else
     if !a:add_new_line

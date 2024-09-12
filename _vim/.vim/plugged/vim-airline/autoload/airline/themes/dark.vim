@@ -1,4 +1,4 @@
-" MIT License. Copyright (c) 2013-2020 Bailey Ling et al.
+" MIT License. Copyright (c) 2013-2021 Bailey Ling et al.
 " vim: et ts=2 sts=2 sw=2 tw=80
 
 scriptencoding utf-8
@@ -11,17 +11,18 @@ scriptencoding utf-8
 "       * airline_x (first section of the right most sections)
 "       * airline_y (section just to the right of airline_x)
 "       * airline_z (right most section)
-"   * The mode of the buffer, as reported by the :mode() function.  Airline 
+"   * The mode of the buffer, as reported by the :mode() function.  Airline
 "     converts the values reported by mode() to the following:
 "       * normal
 "       * insert
 "       * replace
 "       * visual
 "       * inactive
+"       * terminal
 "       The last one is actually no real mode as returned by mode(), but used by
 "       airline to style inactive statuslines (e.g. windows, where the cursor
 "       currently does not reside in).
-"   * In addition to each section and mode specified above, airline themes 
+"   * In addition to each section and mode specified above, airline themes
 "     can also specify overrides.  Overrides can be provided for the following
 "     scenarios:
 "       * 'modified'
@@ -33,7 +34,7 @@ scriptencoding utf-8
 "   * g:airline#themes#<theme_name>#palette
 " where <theme_name> is substituted for the name of the theme.vim file where the
 " theme definition resides.  Airline themes should reside somewhere on the
-" 'runtimepath' where it will be loaded at vim startup, for example:  
+" 'runtimepath' where it will be loaded at vim startup, for example:
 "   * autoload/airline/themes/theme_name.vim
 "
 " For this, the dark.vim, theme, this is defined as
@@ -41,12 +42,12 @@ let g:airline#themes#dark#palette = {}
 
 " Keys in the dictionary are composed of the mode, and if specified the
 " override.  For example:
-"   * g:airline#themes#dark#palette.normal 
+"   * g:airline#themes#dark#palette.normal
 "       * the colors for a statusline while in normal mode
-"   * g:airline#themes#dark#palette.normal_modified 
+"   * g:airline#themes#dark#palette.normal_modified
 "       * the colors for a statusline while in normal mode when the buffer has
 "         been modified
-"   * g:airline#themes#dark#palette.visual 
+"   * g:airline#themes#dark#palette.visual
 "       * the colors for a statusline while in visual mode
 "
 " Values for each dictionary key is an array of color values that should be
@@ -55,7 +56,7 @@ let g:airline#themes#dark#palette = {}
 " See "help attr-list" for valid values for the "opt" value.
 "
 " Each theme must provide an array of such values for each airline section of
-" the statusline (airline_a through airline_z).  A convenience function, 
+" the statusline (airline_a through airline_z).  A convenience function,
 " airline#themes#generate_color_map() exists to mirror airline_a/b/c to
 " airline_x/y/z, respectively.
 
@@ -107,6 +108,7 @@ let g:airline#themes#dark#palette.insert_paste = {
       \ 'airline_a': [ s:airline_a_insert[0]   , '#d78700' , s:airline_a_insert[2] , 172     , ''     ] ,
       \ }
 
+let g:airline#themes#dark#palette.terminal = airline#themes#generate_color_map(s:airline_a_insert, s:airline_b_insert, s:airline_c_insert)
 
 let g:airline#themes#dark#palette.replace = copy(g:airline#themes#dark#palette.insert)
 let g:airline#themes#dark#palette.replace.airline_a = [ s:airline_b_insert[0]   , '#af0000' , s:airline_b_insert[2] , 124     , ''     ]
@@ -132,7 +134,7 @@ let g:airline#themes#dark#palette.inactive_modified = {
 
 " For commandline mode, we use the colors from normal mode, except the mode
 " indicator should be colored differently, e.g. light green
-let s:airline_a_commandline = [ '#0000ff' , '#0cff00' , 17  , 40 ]
+let s:airline_a_commandline = [ '#00005f' , '#00d700' , 17  , 40 ]
 let s:airline_b_commandline = [ '#ffffff' , '#444444' , 255 , 238 ]
 let s:airline_c_commandline = [ '#9cffd3' , '#202020' , 85  , 234 ]
 let g:airline#themes#dark#palette.commandline = airline#themes#generate_color_map(s:airline_a_commandline, s:airline_b_commandline, s:airline_c_commandline)
@@ -150,7 +152,7 @@ let g:airline#themes#dark#palette.accents = {
 
 
 " Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
-" variable so that related functionality is loaded iff the user is using
+" variable so that related functionality is loaded if the user is using
 " ctrlp. Note that this is optional, and if you do not define ctrlp colors
 " they will be chosen automatically from the existing palette.
 if get(g:, 'loaded_ctrlp', 0)

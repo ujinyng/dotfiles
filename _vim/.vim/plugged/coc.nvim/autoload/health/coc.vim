@@ -1,25 +1,40 @@
+scriptencoding utf-8
 let s:root = expand('<sfile>:h:h:h')
 
-function! s:checkEnvironment() abort
-  let valid = 1
-  if !has('nvim-0.3.0')
-    let valid = 0
-    call health#report_error('Neovim version not satisfied, 0.3.0 and above required')
+function! s:checkVim(test, name, patchlevel) abort
+  if a:test
+    if !has(a:patchlevel)
+      call health#report_error(a:name . ' version not satisfied, ' . a:patchlevel . ' and above required')
+      return 0
+    else
+      call health#report_ok(a:name . ' version satisfied')
+      return 1
+    endif
   endif
-  let node = get(g:, 'coc_node_path', 'node')
+  return 0
+endfunction
+
+function! s:checkEnvironment() abort
+  let valid
+    \ = s:checkVim(has('nvim'), 'nvim', 'nvim-0.4.0')
+    \ + s:checkVim(!has('nvim'), 'vim', 'patch-8.1.1719')
+  let node = get(g:, 'coc_node_path', $COC_NODE_PATH == '' ? 'node' : $COC_NODE_PATH)
   if !executable(node)
     let valid = 0
     call health#report_error('Executable node.js not found, install node.js from http://nodejs.org/')
   endif
   let output = system(node . ' --version')
   if v:shell_error && output !=# ""
-    echohl Error | echom output | echohl None
-    return
+    let valid = 0
+    call health#report_error(output)
   endif
   let ms = matchlist(output, 'v\(\d\+\).\(\d\+\).\(\d\+\)')
-  if empty(ms) || str2nr(ms[1]) < 8 || (str2nr(ms[1]) == 8 && str2nr(ms[2]) < 10)
+  if empty(ms)
     let valid = 0
-    call health#report_error('Node.js version '.output.' < 8.10.0, please upgrade node.js')
+    call health#report_error('Unable to detect version of node, make sure your node executable is http://nodejs.org/')
+  elseif str2nr(ms[1]) < 14 || (str2nr(ms[1]) == 14 && str2nr(ms[2]) < 14)
+    let valid = 0
+    call health#report_warn('Node.js version '.trim(output).' < 14.14.0, please upgrade node.js')
   endif
   if valid
     call health#report_ok('Environment check passed')
@@ -29,6 +44,9 @@ function! s:checkEnvironment() abort
       silent pyx print("")
     catch /.*/
       call health#report_warn('pyx command not work, some extensions may fail to work, checkout ":h pythonx"')
+      if has('nvim')
+        call health#report_warn('Install pynvim by command: pip install pynvim --upgrade')
+      endif
     endtry
   endif
   return valid
@@ -36,15 +54,10 @@ endfunction
 
 function! s:checkCommand()
   let file = s:root.'/build/index.js'
-  if filereadable(file) && !get(g:, 'coc_force_debug', 0)
-    call health#report_ok('Javascript bundle found')
-    return
-  endif
-  let file = s:root.'/lib/attach.js'
-  if !filereadable(file)
-    call health#report_error('Javascript entry not found, run ":call coc#util#install()" to fix it.')
+  if filereadable(file)
+    call health#report_ok('Javascript bundle build/index.js found')
   else
-    call health#report_ok('Build javascript found')
+    call health#report_error('Javascript entry not found, please compile coc.nvim by esbuild.')
   endif
 endfunction
 
@@ -67,7 +80,7 @@ function! s:checkAutocmd()
   endfor
 endfunction
 
-function! s:checkInitailize() abort
+function! s:checkInitialize() abort
   if coc#client#is_running('coc')
     call health#report_ok('Service started')
     return 1
@@ -82,6 +95,6 @@ endfunction
 function! health#coc#check() abort
     call s:checkEnvironment()
     call s:checkCommand()
-    call s:checkInitailize()
+    call s:checkInitialize()
     call s:checkAutocmd()
 endfunction
