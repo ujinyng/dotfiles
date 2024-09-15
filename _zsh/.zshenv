@@ -168,3 +168,8 @@ export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/python@3.8/lib:$LDFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig:$PKG_CONFIG_PATH"
 export TERM=xterm-256color
+
+export PATH="$PATH:/Users/ujinyoung/.foundry/bin"
+
+export PATH="$PATH:/Users/ujinyoung/.foundry/bin"
+. "$HOME/.cargo/env"
