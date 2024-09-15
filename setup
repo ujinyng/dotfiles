@@ -1,0 +1,95 @@
+#!/usr/bin/env zsh
+
+git submodule init
+git submodule update
+
+# set basic apps
+
+# what directories should be installable by all users including the root user
+root=(
+
+)
+
+# for local user
+useronly=(
+  _vim
+  _zsh
+  term
+ 
+)
+
+help(){
+  
+  echo "Usage: setup [OPTIONS] [GROUP_NAME]...
+
+  Restore specified dotfile groups using stow. Groups are symlinked to \$HOME.
+  Multiple groups can be listed separated by spaces.
+  Use 'setup --basic' or 'setup -B' for a predefined set of essential groups.
+
+  Groups:
+    _vim, _zsh, _tmux, _git, _gdb, _fzf, _yarn, _python, _karabiner, _rclone
+
+  Options:
+    -B, --basic, basic  Restore a predefined set of essential groups
+                        (_vim, _zsh, term)
+
+  Example:
+    setup _vim _zsh _tmux  # Restores vim, zsh, and tmux configurations
+    setup -B              # Restores the basic configuration groups
+  "
+}
+
+
+stowit(){
+  # -v verbose
+  # -R recursive
+  # -t target
+  stow -v -R -t ${HOME} ${app}
+}
+
+basic(){
+  # install apps available to all users 
+  echo "##### Stowing apps for all users "
+  echo ""
+
+  for app in ${root[@]}; do
+	  echo "Stowing $app in progress."
+	  stowit "${HOME}" $app
+  done
+
+  # install only user space folders (not root user)
+  echo ""
+  echo "##### Stowing apps for user only: $(whoami)"
+  echo ""
+  for app in ${useronly[@]}; do
+    if [[ $USER != "root" ]]; then				
+	    echo "Stowing $app in progress."
+      stowit "${HOME}" $app
+    fi 
+  done
+
+  echo ""
+  echo "##### ALL DONE"
+}
+
+# Check if any arguments are provided
+if [ $# -eq 0 ]; then
+  help
+fi
+
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    -B|--basic|basic)
+      basic
+      ;;
+    -h|--help|help)
+      help
+      return 0
+      ;;
+    *)
+      app=$1
+      stowit $HOME $app
+      ;;
+  esac
+  shift
+done

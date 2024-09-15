@@ -1,0 +1,78 @@
+#!/usr/bin/env zsh
+
+# help(){
+#   echo "bootstrap install: 
+#     Install git, brew, zsh, vim, fzf, tmux, gdb, nodejs, yarn, python and others"
+# }
+
+install(){
+  # Xcode Command Line Tools for Homebrew 
+  echo "[$ZSH_ARGZERO] Pre-installing Xcode Command Line Tools for Homebrew..."
+  xcode-select --install
+
+  # Homebrew
+  echo "[$ZSH_ARGZERO] Installing Homebrew..."
+
+  if test ! $(which brew); then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
+
+  brew update
+  mas upgrade
+  brew tap homebrew/bundle
+  brew bundle --file=$HOME/dotfiles/Brewfile #Brewfile로 설치
+  brew bundle --file=$HOME/dotfiles/Brewmas #mas로 appstore 앱 설치
+  #remove old version
+  brew cleanup
+  brew cask cleanup
+  
+  # restore from Dropbox 
+  echo "[$ZSH_ARGZERO] Executing 'mackup restore' command..."
+  mackup restore
+
+  # git config (mackup으로 dropbox에서 연결되지 않은 경우 git에서 가져옴)
+  [ ! -f $HOME/.gitconfig ] && echo "[$ZSH_ARGZERO] .gitconfig not found. Fetching from dotfiles..." || true \
+  && rsync -azvhrubR -L ~/dotfiles/_git/./.gitconfig ~ && echo "[$ZSH_ARGZERO] .gitconfig fetching complete..."
+  [ ! -f $HOME/.gitignore_global ] && echo "[$ZSH_ARGZERO] .gitignore_global not found. Fetching from dotfiles..." || true \
+  && rsync -azvhrubR -L ~/dotfiles/_git/./.gitignore_global ~ && echo "[$ZSH_ARGZERO] .gitignore_global fetching complete..."
+  #[ ! -f $HOME/.gitconfig ] && ln -ns $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+  #[ ! -f $HOME/.gitignore_global ] && ln -ns $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
+#  [ ! -f $HOME/.gitconfig ] && ln -bns $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+#  [ ! -f $HOME/.gitignore_global ] && ln -bns $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
+#  git config --global inlude.path ../.gitconfig
+
+
+  # oh-my-zsh
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  # zsh
+  [ ! -f $HOME/.zshenv ] && echo "[$ZSH_ARGZERO] .zshenv not found. Fetching from dotfiles..." || true \
+  && rsync -azvhrubR -L ~/dotfiles/_zsh/./.zshenv ~ && echo "[$ZSH_ARGZERO] .zshenv fetching complete..." 
+  [ ! -f $HOME/.zshrc] && echo "[$ZSH_ARGZERO] .zshrc not found. Fetching from dotfiles..." || true \
+  && rsync -azvhrubR -L ~/dotfiles/_zsh/./.zshrc ~ && echo "[$ZSH_ARGZERO] .zshrc fetching complete..."
+
+
+  # nodejs
+  echo "[$ZSH_ARGZERO] Installing NVM..."
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash && \
+  echo "[$ZSH_ARGZERO] Installing Node.js LTS version..." && \
+  nvm install --lts && \
+  echo "[$ZSH_ARGZERO] Installing Yarn..." && \
+  npm install --global yarn
+  
+  # yarn global path
+  yarn config set prefix ~/.yarn && yarn config get prefix && cat ~/.yarnc 
+
+  # autoenv
+  source /usr/local/opt/autoenv/activate.sh
+
+  
+}
+install
+
+# if [ $# -eq 0 ]; then
+#   help
+# elif [[ "$1" == "install" ]]; then
+#   install 
+# else
+#   help
+# fi
