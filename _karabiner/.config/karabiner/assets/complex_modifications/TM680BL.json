@@ -2,7 +2,7 @@
   "title": "윈도우 키보드 설정",
   "rules": [
     {
-      "description": "한/영키를 한영전환으로 사용",
+      "description": "Right Option을 한/영전환키로 사용",
       "manipulators": [
         {
           "type": "basic",
@@ -330,39 +330,6 @@
       ]
     },
     {
-      "description": "ESC를 `(grave accent)로 사용",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "com.parallels.desktop",
-                "com.parallels.vm",
-                "com.parallels.desktop.console",
-                "com.parallels.winapp.",
-                "com.microsoft.rdc.macos"
-              ]
-            },
-            {
-              "type": "device_unless",
-              "identifiers": [    {
-                  "vendor_id": 1452
-                }
-              ]
-            }
-          ],
-          "from": {
-            "key_code": "escape"
-          },
-          "to" : {
-              "key_code": "grave_accent_and_tilde"
-          }
-        }
-      ]
-    },
-    {
           "description": "ESC+Shift를 ~(tilde)로 사용",
           "manipulators": [
             {
@@ -403,39 +370,26 @@
           ]
         },
     {
-              "description": "Caps Lock을 ESC로 사용",
-              "manipulators": [
+      "description": "Remap ESC to `(grave accent, backtick) and Caps Lock to ESC",
+      "manipulators": [
+        
+            "conditions": [
                 {
-                  "type": "basic",
-                  "conditions": [
-                    {
-                      "type": "frontmost_application_unless",
-                      "bundle_identifiers": [
-                        "com.parallels.desktop",
-                        "com.parallels.vm",
-                        "com.parallels.desktop.console",
-                        "com.parallels.winapp.",
-                        "com.microsoft.rdc.macos"
-                      ]
-                    },
-                    {
-                      "type": "device_unless",
-                      "identifiers": [    {
-                          "vendor_id": 1452
-                        }
-                      ]
-                    }
-                  ],
-                  "from": {
-                    "key_code": "caps_lock"
-                  },
-                  "to" : {
-                      "key_code": "escape"
-    
-                  }
+                    "identifiers": [{ "vendor_id": 1452 }],
+                    "type": "device_unless"
                 }
-              ]
-            },
+            ],
+            "from": { "key_code": "escape" },
+            "to": [{ "key_code": "grave_accent_and_tilde" }],
+            "type": "basic"
+        },
+        {
+            "from": { "key_code": "caps_lock" },
+            "to": [{ "key_code": "escape" }],
+            "type": "basic"
+        }
+    ]
+    },
     {
                   "description": "Caps Lock+Shift을 Caps Lock으로 사용",
                   "manipulators": [
