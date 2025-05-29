@@ -36,6 +36,14 @@ _git(){
 }
 
 _brew(){
+  echo "brew update"
+  brew update
+  echo "brew cleanup"
+  brew cleanup
+  echo "brew upgrade mas"
+  brew upgrade mas
+  echo "create Brewfile and Brewmas"
+  
   rm ~/dotfiles/Brewfile~
   rm ~/dotfiles/Brewmas~
   mv ~/dotfiles/Brewfile ~/dotfiles/Brewfile~
@@ -44,6 +52,14 @@ _brew(){
   brew bundle --mas dump --force --file=~/./Brewmas
   rsync -azvhrubR -L ~/./Brewfile ~/dotfiles/Brewfile
   rsync -azvhrubR -L ~/./Brewmas ~/dotfiles/Brewmas
+  echo "
+  cat Brewfile
+  "
+  cat Brewfile
+  echo "
+  cat Brewmas
+  "
+  cat Brewmas
 }
 
 _zsh(){

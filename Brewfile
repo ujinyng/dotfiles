@@ -12,16 +12,16 @@ brew "openexr"
 brew "aview"
 brew "bat"
 brew "bzip2"
-brew "readline"
-brew "sqlite"
 brew "glib"
 brew "llvm"
 brew "ccls"
+brew "pkgconf"
 brew "cmake"
 brew "ctags"
 brew "docker", link: false
+brew "exiftool"
 brew "unbound"
-brew "numpy"
+brew "tesseract"
 brew "ffmpeg"
 brew "figlet"
 brew "fzf"
@@ -30,35 +30,36 @@ brew "gdk-pixbuf"
 brew "geckodriver"
 brew "gh"
 brew "libusb"
-brew "pkg-config"
 brew "gobject-introspection"
 brew "guile"
 brew "highlight"
-brew "libffi"
-brew "tcl-tk"
-brew "python@3.8"
 brew "imagemagick"
 brew "jpeg"
 brew "kubernetes-cli"
+brew "libffi"
 brew "librsvg"
-brew "libxml2"
 brew "mackup"
 brew "mas"
 brew "minikube"
 brew "mono"
+brew "utf8proc", args: ["HEAD"]
 brew "neovim"
 brew "nghttp2"
+brew "numpy"
 brew "protobuf"
 brew "opencv"
 brew "poppler"
 brew "pyenv"
 brew "pyenv-virtualenv"
+brew "tcl-tk"
+brew "python@3.8"
 brew "rclone"
 brew "rename"
 brew "ripgrep"
 brew "rsync"
 brew "rustup"
 brew "stow"
+brew "tesseract-lang"
 brew "the_silver_searcher"
 brew "tmux"
 brew "toilet"
@@ -71,15 +72,22 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "koekeishiya/formulae/yabai", args: ["HEAD"]
 cask "adware-removal-tool"
+cask "appcleaner"
+cask "arc"
 cask "avira-antivirus"
+cask "betterzip"
 cask "box-drive"
 cask "cleaneronepro"
+cask "customshortcuts"
+cask "deepl"
 cask "discord"
 cask "docker"
 cask "dropbox"
 cask "dynalist"
 cask "element"
+cask "exifrenamer"
 cask "firefox"
+cask "floorp"
 cask "font-d2coding"
 cask "free-ruler"
 cask "github"
@@ -91,12 +99,14 @@ cask "kapitainsky-rclone-browser"
 cask "karabiner-elements"
 cask "keka"
 cask "keyclu"
-cask "logitech-options"
+cask "logi-options+"
 cask "macs-fan-control"
+cask "miniconda"
 cask "notable"
 cask "notion"
 cask "osxfuse"
 cask "pycharm"
+cask "raycast"
 cask "slack"
 cask "spectacle"
 cask "teamviewer"
@@ -105,7 +115,42 @@ cask "twitch"
 cask "vagrant"
 cask "visual-studio-code"
 cask "zoom"
+cask "zotero"
+mas "Allkdic", id: 1033453958
+mas "Claquette", id: 587748131
+mas "Color Picker", id: 1545870783
+mas "EasyRes", id: 688211836
+mas "GarageBand", id: 682658836
+mas "Get Plain Text", id: 508368068
+mas "GIPHY CAPTURE", id: 668208984
+mas "Goodnotes", id: 1444383602
+mas "Keynote", id: 409183694
+mas "LINER", id: 1463530746
+mas "Mathpix Snipping Tool", id: 1349670778
+mas "Memory Diag", id: 748212890
+mas "NextDNS", id: 1464122853
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pasta", id: 1438389787
+mas "PhotoScape X", id: 929507092
+mas "Pine Player", id: 1112075769
+mas "Save to Pocket", id: 1477385213
+mas "Scrap Paper", id: 1448441317
+mas "SnippetsLab", id: 1006087419
+mas "Spark", id: 1176895641
+mas "Telegram", id: 747648890
+mas "TickTick", id: 966085870
+mas "Xcode", id: 497799835
+mas "xFormula", id: 1503622988
+mas "카카오톡", id: 869223134
+mas "한컴오피스 한글 V", id: 416746898
+vscode "docker.docker"
+vscode "donjayamanne.githistory"
+vscode "fabiospampinato.vscode-diff"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "julianchen.babylon-js-viewer"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.isort"
